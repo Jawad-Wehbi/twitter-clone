@@ -8,21 +8,24 @@
 
 /* setting the page as flex */
 .container {
-    padding: 1vw 7.5vw 0vw 7.5vw ;
     display: flex;
 }
 
 .menu-bar {
-    width: 17.84vw;
+    width: 18vw;
+    position: fixed;
+    left: 7.5vw;
 }
 
-
-
 .feed-section {
+    margin-left: 25vw;
     width: 42vw;
-    border-color: black;
-    border-right: 2px;
-    border-left: 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.192);
+    border-top: 0cm;
+    border-bottom: 0cm;
+    border-width: 1px;
+    height: 100vh;
 }
 /* Ellipse 5 */
 .column-flex {
@@ -71,8 +74,10 @@
 
 /* Search Twitter */
 .search-section {
+    padding: 1vw 0vw;
     position: fixed;
     width: 24vw;
+    right: 7.5vw;
 }
 
 .search-button {
@@ -88,7 +93,6 @@
     line-height: 23px;
     align-items: center;
     padding: 0vw 2vw;
-    justify-self:end;
 }
 
 .search-button > img {
