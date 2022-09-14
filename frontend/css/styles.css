@@ -11,22 +11,23 @@
     display: flex;
 }
 
-.top-section {
-    padding-top: 1vw;
-}
-
 .menu-bar {
+    padding: 1vw 0vw 0vw 0vw;
     width: 18vw;
     position: fixed;
-    left: 7vw;
+    left: 5vw;
+}
+
+.menu > div {
+    margin-bottom: 1vh;
 }
 
 .logo > img {
-    position: absolute;
-    width: 30px;
+    margin-bottom: 1vh;
+    position: relative;
+    width: 40px;
     height: auto;
-    padding-top: 1vw;
-    margin-bottom: 2vw;
+    padding-left: 1vw;
 }
 
 .tweet > button {
@@ -35,31 +36,30 @@
     font-size: 15px;
     color: #FFFFFF;
     margin-bottom: 10vw;
+    padding-left: 1vw;
 }
 
 .home, .profile {
     justify-content: left;
-    align-items: baseline;
-}
-
-.icon{
-    margin-bottom: 2vw;
+    align-items: center;
+    position: relative;
+    border-radius: 50px;
+    padding: 0.5vw 1vw;
+    max-width: fit-content;
 }
 
 .icon > img {
     position: relative;
     max-width: 22px;
-    min-height: 23px;
+    max-height: 23px;
     margin-right: 2vw;
 }
-
-
 
 /* feed section*/ 
 
 .feed-section {
-    margin-left: 25vw;
-    width: 41vw;
+    margin-left: 23vw;
+    width: 45vw;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.192);
     border-top: 0cm;
@@ -155,7 +155,7 @@
     padding: 1vw 0vw;
     position: fixed;
     width: 24vw;
-    right: 7vw;
+    right: 5vw;
 }
 
 .search-button {
@@ -253,5 +253,12 @@
 .flex {
     display: flex;
     position: relative;
+}
+
+hr {
+    position: relative;
+    margin: 1vw;
+    width: 80%;
+    fill: rgba(0, 0, 0, 0.651);
 }
 
