@@ -1,2 +1,1 @@
-# teitter-clone
- 
+# twitter-clone
