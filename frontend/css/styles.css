@@ -15,9 +15,7 @@
     width: 17.84vw;
 }
 
-.search-section {
-    width: 24.234vw;
-}
+
 
 .feed-section {
     width: 42vw;
@@ -71,6 +69,10 @@
 
 
 /* Search Twitter */
+.search-section {
+    position: relative;
+    width: 24vw;
+}
 
 .search-button {
     position: relative;
@@ -112,3 +114,16 @@
     line-height: 23px;
 }
 
+.who-to-follow {
+    padding: 1vw 2vw;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+}
+
+ .choices {
+    position: relative;
+    padding: 1vw 2vw 1vw 0vw;
+
+ }
