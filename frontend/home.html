@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Twitter Feed </title>
+    <title> Home Twitter </title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.png" />
   </head>
   <body>
     <!-- the page is a flex containing 3 parts-->
@@ -17,7 +17,7 @@
             <div class="menu">
                 <div class="top-section"> 
                     <div>
-                        <div class="logo"> </div>
+                        <div class="logo"> <img src="./img/logo.png"> </div>
                         <div></div>
                     </div>
                     <div class="home">
@@ -49,14 +49,63 @@
         <!-- start of the feed section-->
         <div class="feed-section">
 
+            <div class="upper-bar">
+                <h3> Home </h3>
+            </div>
+
+            <div class="tweet-section">
+                <div class="what-s-happening">
+                    <div class="user-pic"> </div>
+                    <div> <textarea placeholder="What's happening?"></textarea> </div>
+                </div>
+                <div class="lower-section">
+                    <div class="media"> </div>
+                    <div> <button type="submit"> Tweet </button> </div>
+                </div>
+            </div>
+
+            <div class="no-media-tweet">
+                <div class="tweet-more"> ... </div>
+                <div class="contant">
+                    <div class="tweep-picture"> </div>
+                    <div>
+                        <div class="tweep-info">
+                            <div class="tweep-name"> </div>
+                            <div class="tweep-tag"> </div>
+                            <div class="tweet-time"> </div>
+                        </div>
+                        <div class="tweet-contant"> </div>
+                    </div>
+                </div>
+                <div class="like"> </div>
+            </div>
+
+            <div class="media-tweet">
+                <div class="tweet-more"> ... </div>
+                <div class="contant">
+                    <div class="tweep-picture"> </div>
+                    <div>
+                        <div class="tweep-info">
+                            <div class="tweep-name"> </div>
+                            <div class="tweep-tag"> </div>
+                            <div class="tweet-time"> </div>
+                        </div>
+                        <div class="tweet-contant"> </div>
+                        <div class="tweet-media"> </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- end of the feed section-->
 
         <!-- start of the search section-->
         <div class="search-section">
+
             <div class="search">
                 <input class="search-menu" type="text" placeholder="Search Twitter"></input>
             </div>
+
             <div class="who-to-follow">
                 <p> Who to follow </p>
                 <div class="choices">
@@ -93,9 +142,9 @@
                 </div>
             </div>
         </div>
+        <!-- end of the search section-->
     </div>
-    <!-- end of the feed section-->
-    
+
     <script src="./js/feed_page.js"></script>
   </body>
 </html>  
