@@ -23,6 +23,10 @@
     height: auto;
 }
 
+.tweet > button {
+    
+}
+
 /* feed section*/ 
 
 .feed-section {
@@ -58,6 +62,8 @@
     text-align: left;
     text-justify: center;
     resize: none;
+    max-width: 35vw;
+    min-width: 34vw;
 }
 
 .tweet-button {
@@ -76,6 +82,13 @@
 .media > img {
     width: 17px;
     height: auto;
+    margin-left: 5vw ;
+}
+
+.lower-section {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
 }
 
 .user-pic > img {
@@ -100,6 +113,15 @@
     border: 0cm;
 }
 
+.no-media-tweet {
+    padding: 1vw;
+    border: solid;
+    border-bottom: 0cm;
+    border-left: 0cm;
+    border-right: 0cm;
+    border-color: rgba(0, 0, 0, 0.192);
+    border-width: 1px;
+}
 
 /* Search Twitter */
 .search-section {
