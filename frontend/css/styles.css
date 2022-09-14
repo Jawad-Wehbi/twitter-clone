@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.top-section {
+    padding-top: 1vw;
+}
+
 .menu-bar {
     width: 18vw;
     position: fixed;
@@ -21,11 +25,35 @@
     position: absolute;
     width: 30px;
     height: auto;
+    padding-top: 1vw;
+    margin-bottom: 2vw;
 }
 
 .tweet > button {
-    
+    background: #0F9AFB;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-bottom: 10vw;
 }
+
+.home, .profile {
+    justify-content: left;
+    align-items: baseline;
+}
+
+.icon{
+    margin-bottom: 2vw;
+}
+
+.icon > img {
+    position: relative;
+    max-width: 22px;
+    min-height: 23px;
+    margin-right: 2vw;
+}
+
+
 
 /* feed section*/ 
 
@@ -72,7 +100,6 @@
     border-radius: 50px;
     font-weight: 600;
     font-size: 14px;
-    line-height: 23px;
     border: 0cm;
     width: 72px;
     height: 34px;
