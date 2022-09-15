@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Home / Twitter </title>
+    <title> Profile / Twitter </title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mediaquery.css" />
+    <link rel="stylesheet" href="./css/profile-page.css" />
     <link rel="icon" type="image/x-icon" href="./img/logo1.png" />
   </head>
   <body>
@@ -22,14 +23,14 @@
                 </div>
                 <a href="./home-page.html"> 
                 <div class="home flex">
-                    <div class="icon tablet-pic"> <img src="./img/home-black.png"> </div>
-                    <div class="tablet-view hide-mobile"> <h3> Home </h3> </div>
+                    <div class="icon tablet-pic"> <img src="./img/home-empty.png"> </div>
+                    <div class="tablet-view hide-mobile"> <h3 class="home-unselect"> Home </h3> </div>
                 </div>
                 </a>
                 <a href="./profile-page.html"> 
                     <div class="profile flex">
-                        <div class="icon tablet-pic"> <img src="./img/profile-empty.png"> </div>
-                        <div class="profile-selects tablet-view hide-mobile"> <h3> Profile </h3> </div>
+                        <div class="icon tablet-pic"> <img src="./img/profile-black.png"> </div>
+                        <div class="profile-selects tablet-view hide-mobile"> <h3 class="profile-selected"> Profile </h3> </div>
                     </div>
                 </a>
             </div>
@@ -93,20 +94,7 @@
             </div>
             <!-- end of the phone header-->
 
-            <div class="upper-bar hide-mobile">
-                <h3> Home </h3>
-            </div>
 
-            <div class="tweet-section top-tablet hide-mobile">
-                <div class="what-s-happening flex">
-                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div class="text"> <textarea id="tweet-text" class="tweet-area" placeholder="What's happening?"></textarea> </div>
-                </div>
-                <div class="lower-section flex">
-                    <div class="media"> <img src="./img/media.png"> </div>
-                    <div> <button class="tweet-button" type="submit"> Tweet </button> </div>
-                </div>
-            </div>
 
             <div class="no-media-tweet">
                 <div class="tweet-more"> ... </div>
