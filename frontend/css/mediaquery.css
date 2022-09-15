@@ -81,6 +81,26 @@
     .top-tablet {
         margin-top: 1vw;
     }
+
+    .shrink-button {
+        max-width: 50px;
+    }
+
+    .shrink-input {
+        width: 8vw;
+    }
+
+    .pop-tweet-tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .tablet-tweet-box {
+        width: 4vw;
+        top: 50%;
+    }
 }
 
 @media only screen and  (max-width:949px) {

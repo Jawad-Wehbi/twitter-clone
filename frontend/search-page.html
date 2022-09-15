@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Home / Twitter </title>
+    <title> Search / Twitter </title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mediaquery.css" />
+    <link rel="stylesheet" href="./css/search-page.css" />
     <link rel="icon" type="image/x-icon" href="./img/logo1.png" />
   </head>
   <body>
@@ -93,9 +94,26 @@
             </div>
             <!-- end of the phone header-->
 
+            <!-- search header-->
+            <div>
+                <div class="search">
+                    <input tupe="text" placeholder="Search Twitter">  <img src="./img/search-icon.png">
+                </div>
+            </div>
+                <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                <div class="user-info"> 
+                    <div class="user_name"><h4> User name </h4></div>
+                    <div class="user_tag"><h5> user tag </h5></div>
+                </div>
+                <div class="follow">
+                    <button type="submit"> Follow </button>
+                </div>
+             </div>
 
+            <div>
 
-            
+            </div>
+
             <!-- tweet button in mobile -->
             <div class="write-mobile tweet-mobile-button"> <img src="./img/write.png"> </div>
 

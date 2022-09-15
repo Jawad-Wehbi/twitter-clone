@@ -20,13 +20,13 @@
                     <div class="logo tablet-pic"> <img src="./img/logo.png"> </div>
                     <div></div> 
                 </div>
-                <a href="./home.html"> 
+                <a href="./home-page.html"> 
                 <div class="home flex">
                     <div class="icon tablet-pic"> <img src="./img/home-black.png"> </div>
                     <div class="tablet-view hide-mobile"> <h3> Home </h3> </div>
                 </div>
                 </a>
-                <a href="./profile.html"> 
+                <a href="./profile-page.html"> 
                     <div class="profile flex">
                         <div class="icon tablet-pic"> <img src="./img/profile-empty.png"> </div>
                         <div class="profile-selects tablet-view hide-mobile"> <h3> Profile </h3> </div>
@@ -34,16 +34,29 @@
                 </a>
             </div>
             <div class="tweet tweet-tablet"> 
-                <button class="shrink-button" type="submit"> Tweet <img class="tweet-tablet-button tablet-tweet-visible" src="./img/write.png"> </button>
+                <button id="side-tweet-button" class="shrink-button" type="submit"> Tweet <img class="tweet-tablet-button tablet-tweet-visible" src="./img/write.png"> </button>
+            </div>
+
+            <div class="tweet-pop-up tablet-tweet-box">
+                <form id="tweet-pop" class="tweet-pop">
+                    <div class="what-s-happening flex">
+                        <div class="user-pic tablet-view"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                        <div class="text"> <textarea class="pop-tweet-area shrink-input" placeholder="What's happening?"></textarea> </div>
+                    </div>
+                    <div class="lower-section flex pop-tweet-tablet">
+                        <div class="media"> <img src="./img/media.png"> </div>
+                        <div> <button class="tweet-button" type="submit"> Tweet </button> </div>
+                    </div>
+                </form>   
             </div>
 
             <!-- pop up place-->
             <div class="pop-up-log-out">
                 <a href="./front-page.html">
-                    <button id="logout" class="logout" type="submit"> Log out </button>
+                    <button id="logout" class="logout shrink-button" type="submit"> Log out </button>
                 </a>
             </div>
-            <!-- End of pop up-->
+            <!-- End of pop-->
 
             <div class="user-button"> 
                 <button id="user_info" type="menu"> 
@@ -151,7 +164,7 @@
         <!-- start of the search section-->
         <div class="search-section search-shrink hide-mobile">
 
-            <a href="./search.html">
+            <a href="./search-page.html">
                 <div class="search">
                     <button class="search-button flex">  <img src="./img/search-icon.png"> Search Twitter </button>
                 </div>
