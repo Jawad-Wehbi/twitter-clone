@@ -20,20 +20,33 @@
                     <div class="logo tablet-pic"> <img src="./img/logo.png"> </div>
                     <div></div> 
                 </div>
+                <a href="./home.html"> 
                 <div class="home flex">
                     <div class="icon tablet-pic"> <img src="./img/home-black.png"> </div>
                     <div class="tablet-view hide-mobile"> <h3> Home </h3> </div>
                 </div>
-                <div class="profile flex">
-                    <div class="icon tablet-pic"> <img src="./img/profile-empty.png"> </div>
-                    <div class="profile-selects tablet-view hide-mobile"> <h3> Profile </h3> </div>
-                </div>
+                </a>
+                <a href="./profile.html"> 
+                    <div class="profile flex">
+                        <div class="icon tablet-pic"> <img src="./img/profile-empty.png"> </div>
+                        <div class="profile-selects tablet-view hide-mobile"> <h3> Profile </h3> </div>
+                    </div>
+                </a>
             </div>
             <div class="tweet tweet-tablet"> 
                 <button class="shrink-button" type="submit"> Tweet <img class="tweet-tablet-button tablet-tweet-visible" src="./img/write.png"> </button>
             </div>
+
+            <!-- pop up place-->
+            <div class="pop-up-log-out">
+                <a href="./front-page.html">
+                    <button id="logout" class="logout" type="submit"> Log out </button>
+                </a>
+            </div>
+            <!-- End of pop up-->
+
             <div class="user-button"> 
-                <button type="menu"> 
+                <button id="user_info" type="menu"> 
                     <div class="user flex">
                         <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                         <div class="user-info tablet-view hide-mobile"> 
@@ -51,6 +64,7 @@
 
         <!-- start of the feed section-->
         <div class="feed-section shrink-body body-resize">
+            <!-- tweet pop up -->
 
             <!-- This nav bar will apear in screens less than 950px-->
             <div class="mobile-header">
@@ -137,9 +151,11 @@
         <!-- start of the search section-->
         <div class="search-section search-shrink hide-mobile">
 
-            <div class="search">
-                <button class="search-button flex">  <img src="./img/search-icon.png"> Search Twitter </button>
-            </div>
+            <a href="./search.html">
+                <div class="search">
+                    <button class="search-button flex">  <img src="./img/search-icon.png"> Search Twitter </button>
+                </div>
+            </a>
 
             <div class="who-to-follow search-shrink">
                 <p> Who to follow </p>

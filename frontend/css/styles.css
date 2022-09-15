@@ -41,7 +41,7 @@ a {
     border-left: 0cm;
     border-right: 0cm;
     margin-top: 1vw;
-    margin-bottom: 24vw;
+    margin-bottom: 22vw;
     margin-left: 1vw;
     margin-right: 1vw;
 }
@@ -102,10 +102,29 @@ a {
 }
 
 .user-button > button {
+    border-radius: 50px;
+    border: 0cm;
+    background-color: transparent;
+}
+
+.pop-up-log-out {
+    padding: 1vw;
+}
+
+
+.logout {
+    padding: 1vw;
     background-color: transparent;
     border-radius: 50px;
     border: 0cm;
+    background-color:#0F9AFB;
+    width: 16vw;
+    color: white;
+    font-weight: 600;
+    justify-self: center;
+    visibility: hidden;
 }
+
 
 /* feed section*/ 
 
@@ -388,9 +407,8 @@ hr {
     fill: rgba(0, 0, 0, 0.651);
 }
 
- {
-    display: none;
-    visibility: hidden;
+button {
+    cursor: pointer;
 }
 
 .write-mobile, .tweet-tablet-button, .mobile-header, .mobile-footer {
@@ -398,3 +416,21 @@ hr {
     visibility: hidden;
 }
 
+.show {
+    visibility: visible;
+}
+
+.tweet-pop-up{
+    top: 35%;
+    width: 18vw;
+    height: 7vw;
+    position: absolute;
+    visibility: hidden;
+}
+
+.pop-tweet-area {
+    position: relative;
+    border: 0cm;
+    resize: none;
+    padding: 1vw;
+}
