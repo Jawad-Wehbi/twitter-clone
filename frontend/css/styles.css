@@ -393,3 +393,7 @@ hr {
     visibility: hidden;
 }
 
+.write-mobile {
+    display: none;
+    visibility: hidden;
+}

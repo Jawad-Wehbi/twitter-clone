@@ -22,11 +22,11 @@
                 </div>
                 <div class="home flex">
                     <div class="icon tablet-pic"> <img src="./img/home-black.png"> </div>
-                    <div class="tablet-view"> <h3> Home </h3> </div>
+                    <div class="tablet-view hide-mobile"> <h3> Home </h3> </div>
                 </div>
                 <div class="profile flex">
                     <div class="icon tablet-pic"> <img src="./img/profile-empty.png"> </div>
-                    <div class="profile-selects tablet-view"> <h3> Profile </h3> </div>
+                    <div class="profile-selects tablet-view hide-mobile"> <h3> Profile </h3> </div>
                 </div>
             </div>
             <div class="tweet tweet-tablet"> 
@@ -36,11 +36,11 @@
                 <button type="menu"> 
                     <div class="user flex">
                         <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                        <div class="user-info tablet-view"> 
+                        <div class="user-info tablet-view hide-mobile"> 
                             <div class="user_name"><h4> User name </h4></div>
                             <div class="user_tag"> <h5> @tag </h5></div>
                         </div>
-                        <div class="more tablet-view">
+                        <div class="more tablet-view hide-mobile">
                             <p> ... </p>
                         </div>
                     </div>
@@ -50,13 +50,18 @@
         <!-- end of the first part : meny bar-->
 
         <!-- start of the feed section-->
-        <div class="feed-section shrink-body">
+        <div class="feed-section shrink-body body-resize">
 
-            <div class="upper-bar">
+            <!-- This nav bar will apear in screens less than 950px-->
+            <div class="mobile-header">
+                
+            </div>
+
+            <div class="upper-bar hide-mobile">
                 <h3> Home </h3>
             </div>
 
-            <div class="tweet-section top-tablet">
+            <div class="tweet-section top-tablet hide-mobile">
                 <div class="what-s-happening flex">
                     <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                     <div class="text"> <textarea id="tweet-text" class="tweet-area" placeholder="What's happening?"></textarea> </div>
@@ -99,12 +104,15 @@
                 </div>
                 <div class="like"> <img src="./img/like.png"> </div>
             </div>
+            
+            <!-- tweet button in mobile -->
+            <div class="write-mobile tweet-mobile-button"> <img src="./img/write.png"> </div>
 
         </div>
         <!-- end of the feed section-->
 
         <!-- start of the search section-->
-        <div class="search-section search-shrink">
+        <div class="search-section search-shrink hide-mobile">
 
             <div class="search">
                 <button class="search-button flex">  <img src="./img/search-icon.png"> Search Twitter </button>
@@ -147,6 +155,7 @@
             </div>
         </div>
         <!-- end of the search section-->
+
     </div>
 
     <script src="./js/feed_page.js"></script>
