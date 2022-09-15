@@ -15,7 +15,7 @@
     padding: 1vw 0vw 0vw 0vw;
     width: 18vw;
     position: fixed;
-    left: 5vw;
+    left: 4vw;
 }
 
 .menu > div {
@@ -30,14 +30,27 @@
     padding-left: 1vw;
 }
 
+.tweet {
+    border-top: 1px solid gray;
+    border-bottom: 0cm;
+    border-left: 0cm;
+    border-right: 0cm;
+    margin-top: 1vw;
+    margin-bottom: 24vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+
 .tweet > button {
+    margin-top: 1vw;
     background: #0F9AFB;
     border-radius: 50px;
-    font-size: 15px;
     color: #FFFFFF;
-    margin-top: 1vw;
-    margin-bottom: 25vw;
-    padding-left: 1vw;
+    font-weight: 50;
+    font-size: 17px !important;
+    max-width: 16vw;
+    min-width: fit-content;
 }
 
 .home, .profile {
@@ -63,17 +76,21 @@
 .user {
     align-items: center;
     border-radius: 50px;
-    padding: 0.5vw;
+    padding: 1vw;
+}
+
+.user-info {
+    text-align: left;
 }
 
 .user > img {
-    width: 45px;
-    height: auto;
+    width: 40px;
+    height: 40px;
     position: relative;    
 }
 
 .more {
-    margin-left: 4vw;
+    margin-left: 2vw;
     color: #818D97;
     font-size: 20px;
     font-weight: 400;
