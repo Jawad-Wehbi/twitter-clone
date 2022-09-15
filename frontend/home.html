@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Home / Twitter </title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
     <link rel="icon" type="image/x-icon" href="./img/logo1.png" />
   </head>
   <body>
@@ -13,23 +14,23 @@
     <div class ="container">
 
         <!-- start of the first part : meny bar-->
-        <div class="menu-bar shrink-container">
+        <div class="menu-bar shrink-container tablet-menu-bar">
             <div class="menu">
                 <div class="flex ">
-                    <div class="logo"> <img src="./img/logo.png"> </div>
+                    <div class="logo tablet-pic"> <img src="./img/logo.png"> </div>
                     <div></div> 
                 </div>
                 <div class="home flex">
-                    <div class="icon"> <img src="./img/home-page.png"> </div>
+                    <div class="icon tablet-pic"> <img src="./img/home-black.png"> </div>
                     <div class="tablet-view"> <h3> Home </h3> </div>
                 </div>
                 <div class="profile flex">
-                    <div class="icon"> <img src="./img/profile-page.png"> </div>
+                    <div class="icon tablet-pic"> <img src="./img/profile-empty.png"> </div>
                     <div class="profile-selects tablet-view"> <h3> Profile </h3> </div>
                 </div>
             </div>
-            <div class="tweet"> 
-                <button class="shrink-button" type="submit"> Tweet </button>
+            <div class="tweet tweet-tablet"> 
+                <button class="shrink-button" type="submit"> Tweet <img class="tweet-tablet-button tablet-tweet-visible" src="./img/write.png"> </button>
             </div>
             <div class="user-button"> 
                 <button type="menu"> 
@@ -55,7 +56,7 @@
                 <h3> Home </h3>
             </div>
 
-            <div class="tweet-section">
+            <div class="tweet-section top-tablet">
                 <div class="what-s-happening flex">
                     <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                     <div class="text"> <textarea id="tweet-text" class="tweet-area" placeholder="What's happening?"></textarea> </div>

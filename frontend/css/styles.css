@@ -6,6 +6,11 @@
     font-style: normal;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* setting the page as flex */
 .container {
     display: flex;
@@ -47,7 +52,7 @@
     border-radius: 50px;
     color: #FFFFFF;
     font-weight: 50;
-    font-size: 17px !important;
+    font-size: 17px;
     max-width: 16vw;
     min-width: fit-content;
 }
@@ -61,13 +66,13 @@
     max-width: fit-content;
 }
 
-.profile-select > h3  {
-    font-weight: 200;
+.profile-selects > h3  {
+    font-weight: 50;
 }
 
 .icon > img {
     position: relative;
-    width: 23px;
+    width: 25px;
     min-height: 25px;
     margin-right: 2vw;
 }
@@ -121,7 +126,7 @@
     position: fixed;
     background-color: rgba(255, 255, 255, 0.733);
     z-index:100;
-    width: 44.85vw;
+    width: 44.8vw;
 }
 
 
@@ -141,8 +146,7 @@
     text-align: left;
     text-justify: center;
     resize: none;
-    max-width: 35vw;
-    min-width: 34vw;
+    width: 38vw;
 }
 
 .tweet-button {
@@ -316,7 +320,6 @@
     font-weight: 600;
     background-color: black;
     color: white;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     text-align: center;
 }
 
@@ -385,50 +388,8 @@ hr {
     fill: rgba(0, 0, 0, 0.651);
 }
 
-/* Media Query */
-
-@media only screen and  (max-width: 1300px) {
-    .tablet-view {
-        display: none;
-        visibility: hidden;
-    }
-
-    .shrink-container {
-        width: 5vw;
-        position: fixed;
-        left: 5vw;
-    }
-
-    .shrink-body {
-        margin-left: 13vw;
-        width: 55vw;
-    }
-
-    .shrink-button {
-        width: 50px !important;
-        height: 50px !important;
-    }
-
-    .tablet-choices {
-        margin-bottom: 5vw;
-        position: relative;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0vw 3vw;
-    }
-
-    .follow-tablet {
-        display: flex;
-        padding: 0vw;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .search-shrink {
-        text-align: center;
-        padding: 1vw 0vw;
-        position: fixed;
-        width:fit-content;
-        right: 5vw;
-    }
+.tweet-tablet-button {
+    display: none;
+    visibility: hidden;
 }
+

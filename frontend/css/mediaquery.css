@@ -1,0 +1,89 @@
+/* Media Query */
+
+@media only screen and  (min-width:950px) and (max-width: 1300px) {
+    .tablet-view {
+        display: none;
+        visibility: hidden;
+    }
+
+    .shrink-container {
+        width: 5vw;
+        position: fixed;
+        left: 5vw;
+    }
+
+    .shrink-body {
+        margin-left: 13vw;
+        width: 55vw;
+    }
+
+    .top-tablet > {
+        margin-top: 6vw;
+    }
+
+    .tablet-choices {
+        margin-bottom: 5vw;
+        position: relative;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0vw 3vw;
+    }
+
+    .follow-tablet {
+        display: flex;
+        padding: 0vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-shrink {
+        text-align: center;
+        padding: 1vw 0vw;
+        position: fixed;
+        width:fit-content;
+        right: 5vw;
+    }
+
+    .tablet-menu-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .tablet-pic > img {
+        margin-left: 13px;
+        height: 20px;
+        width: auto;
+    }
+
+    .tweet-tablet {
+        border: 0cm;
+        margin-top: 1vw;
+        margin-bottom: 18vw;
+    }
+    
+    .tweet-tablet > button {
+        background-color: white;
+        color: #FFFFFF;
+        width: fit-content;
+        height: fit-content;
+        font-size: 0cm;
+    }
+
+    .tablet-tweet-visible {
+        display: block;
+        visibility: visible;
+        height: 50px;
+        width: 50px;
+    }
+
+    .top-tablet {
+        margin-top: 1vw;
+    }
+}
+
+@media only screen and  (min-width:950px) and (max-width: 1300px) {
+    
+
+}  
