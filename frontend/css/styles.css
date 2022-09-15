@@ -41,7 +41,6 @@
     margin-right: 1vw;
 }
 
-
 .tweet > button {
     margin-top: 1vw;
     background: #0F9AFB;
@@ -374,7 +373,6 @@
     flex-direction: column;
 }
 
-
 .flex {
     display: flex;
     position: relative;
@@ -387,3 +385,50 @@ hr {
     fill: rgba(0, 0, 0, 0.651);
 }
 
+/* Media Query */
+
+@media only screen and  (max-width: 1300px) {
+    .tablet-view {
+        display: none;
+        visibility: hidden;
+    }
+
+    .shrink-container {
+        width: 5vw;
+        position: fixed;
+        left: 5vw;
+    }
+
+    .shrink-body {
+        margin-left: 13vw;
+        width: 55vw;
+    }
+
+    .shrink-button {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .tablet-choices {
+        margin-bottom: 5vw;
+        position: relative;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0vw 3vw;
+    }
+
+    .follow-tablet {
+        display: flex;
+        padding: 0vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-shrink {
+        text-align: center;
+        padding: 1vw 0vw;
+        position: fixed;
+        width:fit-content;
+        right: 5vw;
+    }
+}

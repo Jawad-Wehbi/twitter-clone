@@ -13,33 +13,33 @@
     <div class ="container">
 
         <!-- start of the first part : meny bar-->
-        <div class="menu-bar shrink-container">
+        <div class="menu-bar">
             <div class="menu">
-                <div class="flex ">
+                <div class="flex">
                     <div class="logo"> <img src="./img/logo.png"> </div>
                     <div></div> 
                 </div>
                 <div class="home flex">
                     <div class="icon"> <img src="./img/home-page.png"> </div>
-                    <div class="tablet-view"> <h3> Home </h3> </div>
+                    <div> <h3 class="tablet"> Home </h3> </div>
                 </div>
                 <div class="profile flex">
                     <div class="icon"> <img src="./img/profile-page.png"> </div>
-                    <div class="profile-selects tablet-view"> <h3> Profile </h3> </div>
+                    <div class="profile-selects tablet"> <h3> Profile </h3> </div>
                 </div>
             </div>
             <div class="tweet"> 
-                <button class="shrink-button" type="submit"> Tweet </button>
+                <button type="submit"> Tweet </button>
             </div>
             <div class="user-button"> 
                 <button type="menu"> 
                     <div class="user flex">
                         <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                        <div class="user-info tablet-view"> 
+                        <div class="user-info"> 
                             <div class="user_name"><h4> User name </h4></div>
                             <div class="user_tag"> <h5> @tag </h5></div>
                         </div>
-                        <div class="more tablet-view">
+                        <div class="more">
                             <p> ... </p>
                         </div>
                     </div>
@@ -48,97 +48,47 @@
         </div>
         <!-- end of the first part : meny bar-->
 
-        <!-- start of the feed section-->
-        <div class="feed-section shrink-body">
+        <!-- start of the search section-->
 
-            <div class="upper-bar">
-                <h3> Home </h3>
-            </div>
-
-            <div class="tweet-section">
-                <div class="what-s-happening flex">
-                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div class="text"> <textarea id="tweet-text" class="tweet-area" placeholder="What's happening?"></textarea> </div>
-                </div>
-                <div class="lower-section flex">
-                    <div class="media"> <img src="./img/media.png"> </div>
-                    <div> <button class="tweet-button" type="submit"> Tweet </button> </div>
-                </div>
-            </div>
-
-            <div class="no-media-tweet">
-                <div class="tweet-more"> ... </div>
-                <div class="contant flex">
-                    <div class="tweep-picture"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div>
-                        <div class="tweep-info">
-                            <div class="tweep-name"> user name </div>
-                            <div class="tweep-tag"> @person </div>
-                            <div class="tweet-time"> 8h </div>
-                        </div>
-                        <div class="tweet-contant"> hello here </div>
-                    </div>
-                </div>
-                <div class="like"> <img src="./img/like.png"> </div>
-            </div>
-
-            <div class="media-tweet">
-                <div class="tweet-more"> ... </div>
-                <div class="contant flex">
-                    <div class="tweep-picture"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div>
-                        <div class="tweep-info">
-                            <div class="tweep-name"> user name  </div>
-                            <div class="tweep-tag"> @person .  </div>
-                            <div class="tweet-time"> 6h </div>
-                        </div>
-                        <div class="tweet-contant"> hello I'm here  </div>
-                        <div class="tweet-media"> <img src="./img/default_profile.png"> </div>
-                    </div>
-                </div>
-                <div class="like"> <img src="./img/like.png"> </div>
-            </div>
-
-        </div>
-        <!-- end of the feed section-->
+        <!-- end of the search section-->
 
         <!-- start of the search section-->
-        <div class="search-section search-shrink">
+        <div class="search-section">
 
             <div class="search">
                 <button class="search-button flex">  <img src="./img/search-icon.png"> Search Twitter </button>
             </div>
 
-            <div class="who-to-follow search-shrink">
+            <div class="who-to-follow">
                 <p> Who to follow </p>
-                <div class="choices ">
-                    <div class="choice flex tablet-choices">
+                <div class="choices">
+                    <div class="choice flex">
                         <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                         <div class="user-info"> 
                             <div class="user_name"><h4> User name </h4></div>
                             <div class="user_tag"><h5> user tag </h5></div>
                         </div>
-                        <div class="follow follow-tablet">
+                        <div class="follow">
                             <button type="submit"> Follow </button>
                         </div>
                     </div>
-                    <div class="choice flex tablet-choices">
+                    <div class="choice flex">
                         <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                         <div class="user-info"> 
                             <div class="user_name"><h4> User name </h4></div>
                             <div class="user_tag"><h5> user tag </h5></div>
                         </div>
-                        <div class="follow follow-tablet">
+                        <div class="follow">
                             <button type="submit"> Follow </button>
                         </div>
                     </div>
-                    <div class="choice flex tablet-choices">
+                    <div class="choice flex">
                         <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                         <div class="user-info"> 
                             <div class="user_name"><h4> User name </h4></div>
                             <div class="user_tag"><h5> user tag </h5></div>
                         </div>
-                        <div class="follow follow-tablet">
+                        <div class="follow">
                             <button type="submit"> Follow </button>
                         </div>
                     </div>
