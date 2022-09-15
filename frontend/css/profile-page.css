@@ -27,3 +27,11 @@
 .information > div {
     margin-bottom: 1vw;
 }
+
+.profile-user-name {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 33px;
+}
+
