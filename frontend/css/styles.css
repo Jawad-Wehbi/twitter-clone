@@ -388,12 +388,13 @@ hr {
     fill: rgba(0, 0, 0, 0.651);
 }
 
-.tweet-tablet-button {
+ {
     display: none;
     visibility: hidden;
 }
 
-.write-mobile {
+.write-mobile, .tweet-tablet-button, .mobile-header, .mobile-footer {
     display: none;
     visibility: hidden;
 }
+

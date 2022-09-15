@@ -90,15 +90,16 @@
     }
 
     .body-resize {
-        width: 100%
+        width: 100vw;
+        margin-left: 0vw;
     }
 
     .tweet-mobile-button {
         visibility: visible;
         display: flex;
         position: fixed;
-        bottom: 1vw;
-        right: 4vw;
+        bottom: 6vw;
+        right: 6vw;
     }
 
     .tweet-mobile-button > img {
@@ -106,4 +107,30 @@
         height: 50px;
     }
 
+    .mobile-header {
+        padding: 2vw;
+        position: relative;
+        display: flex;
+        visibility: visible;
+        justify-content: space-between;
+    }
+
+    .mobile-logo > img {
+        height: 30px;
+        width: auto;
+    }
+
+    .mobile-settings > img {
+        height: 30px;
+        width: auto;
+    }
+
+    .user-pic-mobile > img {
+        height: 30px;
+        width: auto;
+    }
+
+    .mobile-footer {
+        
+    }
 }  
