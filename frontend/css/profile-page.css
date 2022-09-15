@@ -5,3 +5,25 @@
 .profile-selected {
     font-weight: bold !important;
 }
+
+.page-parts {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-tweets > button {
+    border: 0cm;
+    background-color: transparent;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.information {
+    padding: 1vw;
+}
+
+.information > div {
+    margin-bottom: 1vw;
+}
