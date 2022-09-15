@@ -100,13 +100,17 @@
 }
 
 .upper-bar {
-    position: fixed;
+    padding: 1vw;
     backdrop-filter: blur(10px);
-    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.733);
+    z-index:100;
+    width: 44.85vw;
 }
 
+
 .tweet-section {
-    padding: 3vw 1vw 1vw 1vw;
+    padding: 4vw 1vw 1vw 1vw;
     align-content: center;
 }
 
@@ -180,6 +184,76 @@
     border-color: rgba(0, 0, 0, 0.192);
     border-width: 1px;
 }
+
+.media-tweet {
+    padding: 1vw;
+    border: solid;
+    border-bottom: 0cm;
+    border-left: 0cm;
+    border-right: 0cm;
+    border-color: rgba(0, 0, 0, 0.192);
+    border-width: 1px;
+}
+
+.tweep-picture > img {
+    position: relative;
+    width: 50px;
+    height: auto;
+}
+
+.tweep-info {
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.tweep-name {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.tweep-tag, .tweet-time {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    color: #818D97;
+    margin-left: 0.3vw;
+}
+
+.tweet-contant {
+    padding-left: 1vw;
+    margin-top: 0.2vw;
+}
+
+.tweet-media > img {
+    border-radius: 25px;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.tweet-more {
+    text-align: right;
+    color: #818D97;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.like {
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.like > img {
+    position: relative;
+    width: 16px;
+    height: 15px;
+}
+
 
 /* Search Twitter */
 .search-section {
@@ -273,6 +347,7 @@
     font-weight: 400;
     font-size: 14px;
     color: #818D97;
+    line-height: 20px;
 }
 
 /* utilities*/
