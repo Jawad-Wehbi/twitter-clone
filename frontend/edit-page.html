@@ -27,39 +27,45 @@
         <!-- end of the phone header-->
 
     <div class="container body-resize">
-            <div class="edit-box"> 
-                <div class="hide-mobile">
-                    <a href="./home-page.html"> <img src="./img/arrow.png"> </a>
-                </div>
-                <h3> Edit profile </h3>
-                <div class="header">
-                    <p> Change the header </p>
-                    <input accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
-                </div>
-                <div class="profile-image">
-                    <p> Change profile picture </p> 
-                    <input accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
-                </div>
-                <div class="mobile-view-info">
-                    <div class="edit-name"> 
-                        <p> Name </p>
-                        <input type:"text" placeholder="name..."> 
+        <div class="hide-mobile">
+            <a href="./home-page.html"> <img src="./img/arrow.png"> </a><h3> Edit profile </h3>
+        </div>
+        
+            <div class="edit-box flex"> 
+                <div class="pictures-part"> 
+                    <div class="header">
+                        <p> Change the header </p>
+                        <input accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
                     </div>
-                    <div class="edit-tag"> 
-                        <p> Tag </p>
-                        <input type:"text" placeholder="@..."> 
+                    <div class="profile-image">
+                        <p> Change profile picture </p> 
+                        <input accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
                     </div>
-                    <div class="edit-bio"> 
-                        <p> Bio </p>
-                        <input type:"text" placeholder="Bio"> 
-                    </div>
-                    <div class="Edit birthday">
-                        <p> Edit Birthday </p>
-                        <input type="date" id="birthday" name="birthday">
-                    </div> 
                 </div>
-                <div class="save"> <button type="Save"> Save </button></div>
-                <div class="cancel"> <a href="./profile-page.html"> <button type="cancel"> Cancel </button> </a> </div>
+                <div class="info-part"> 
+                    <div class="mobile-view-info">
+                        <div class="edit-name"> 
+                            <p> Name </p>
+                            <input type:"text" placeholder="name..."> 
+                        </div>
+                        <div class="edit-tag"> 
+                            <p> Tag </p>
+                            <input type:"text" placeholder="@..."> 
+                        </div>
+                        <div class="edit-bio"> 
+                            <p> Bio </p>
+                            <input type:"text" placeholder="Bio"> 
+                        </div>
+                        <div class="Edit birthday">
+                            <p> Edit Birthday </p>
+                            <input type="date" id="birthday" name="birthday">
+                        </div> 
+                    </div>
+                </div>
+                <div class="save-part">
+                    <div class="save"> <button type="Save"> Save </button></div>
+                    <div> <a href="./profile-page.html"> <button class="cancel" type="cancel"> Cancel </button> </a> </div>
+                </div>
             </div>
         </div>
             
