@@ -1,0 +1,15 @@
+.container {
+    padding: 2vw 4vw;
+    border: 0cm;
+    width: 50%;
+}
+
+h3, p { 
+    font-weight: 600;
+    margin: 1vw 0vw 1vw 0vw;
+    color: #0F9AFB;
+}
+
+.edit-box {
+    top: vw;
+}

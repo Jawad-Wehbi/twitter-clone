@@ -8,99 +8,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mediaquery.css" />
     <link rel="stylesheet" href="./css/profile-page.css" />
+    <link rel="stylesheet" href="./css/edit-page.css" />
     <link rel="icon" type="image/x-icon" href="./img/logo1.png" />
   </head>
   <body>
-    <!-- the page is a flex containing 3 parts-->
-    <div class ="container">
-
-        <!-- start of the first part : meny bar-->
-        <div class="menu-bar shrink-container tablet-menu-bar hide-mobile">
-            <div class="menu">
-                <div class="flex ">
-                    <div class="logo tablet-pic"> <img src="./img/logo.png"> </div>
-                    <div></div> 
-                </div>
-                <a href="./home-page.html"> 
-                <div class="home flex">
-                    <div class="icon tablet-pic"> <img src="./img/home-empty.png"> </div>
-                    <div class="tablet-view hide-mobile"> <h3 class="home-unselect"> Home </h3> </div>
-                </div>
-                </a>
-                <a href="./profile-page.html"> 
-                    <div class="profile flex">
-                        <div class="icon tablet-pic"> <img src="./img/profile-black.png"> </div>
-                        <div class="profile-selects tablet-view hide-mobile"> <h3 class="profile-selected"> Profile </h3> </div>
-                    </div>
-                </a>
+        <!-- This nav bar will apear in screens less than 950px-->
+        <div class="mobile-header">
+            <div class="user-pic user-pic-mobile">
+                <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';">
             </div>
-            <div class="tweet tweet-tablet"> 
-                <button id="side-tweet-button" class="shrink-button" type="submit"> Tweet <img class="tweet-tablet-button tablet-tweet-visible" src="./img/write.png"> </button>
+            <div class="mobile-logo">
+                <img src="./img/logo.png">
             </div>
-
-            <div class="tweet-pop-up tablet-tweet-box">
-                <form id="tweet-pop" class="tweet-pop">
-                    <div class="what-s-happening flex">
-                        <div class="user-pic tablet-view"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                        <div class="text"> <textarea class="pop-tweet-area shrink-input" placeholder="What's happening?"></textarea> </div>
-                    </div>
-                    <div class="lower-section flex pop-tweet-tablet">
-                        <div class="media"> <img src="./img/media.png"> </div>
-                        <div> <button class="tweet-button" type="submit"> Tweet </button> </div>
-                    </div>
-                </form>   
-            </div>
-
-            <!-- pop up place-->
-            <div class="pop-up-log-out">
-                <a href="./front-page.html">
-                    <button id="logout" class="logout shrink-button" type="submit"> Log out </button>
-                </a>
-            </div>
-            <!-- End of pop-->
-
-            <div class="user-button"> 
-                <button id="user_info" type="menu"> 
-                    <div class="user flex">
-                        <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                        <div class="user-info tablet-view hide-mobile"> 
-                            <div class="user_name"><h4> User name </h4></div>
-                            <div class="user_tag"> <h5> @tag </h5></div>
-                        </div>
-                        <div class="more tablet-view hide-mobile">
-                            <p> ... </p>
-                        </div>
-                    </div>
-                </button>
+            <div class="mobile-settings">
+                <img src="./img/setting.png">
             </div>
         </div>
-        <!-- end of the first part : meny bar-->
+        <!-- end of the phone header-->
 
-        <!-- start of the feed section-->
-        <div class="feed-section shrink-body body-resize">
-
-            <!-- This nav bar will apear in screens less than 950px-->
-            <div class="mobile-header">
-                <div class="user-pic user-pic-mobile">
-                    <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';">
+    <div class="container body-resize">
+            <div class="edit-box"> 
+                <div class="hide-mobile">
+                    <a href="./home-page.html"> <img src="./img/arrow.png"> </a>
                 </div>
-                <div class="mobile-logo">
-                    <img src="./img/logo.png">
-                </div>
-                <div class="mobile-settings">
-                    <img src="./img/setting.png">
-                </div>
-            </div>
-            <!-- end of the phone header-->
-
-            <div class="user-whole-profile"> 
+                <h3> Edit profile </h3>
                 <div class="header">
-                    <div class="pictures">
-                        <div class="header-image"> </div>
-                        <div> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    </div>
+                    <p> Change the header </p>
+                    <input accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
                 </div>
-                <div class="information mobile-view-info">
+                <div class="profile-image">
+                    <p> Change profile picture </p> 
+                    <input accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
+                </div>
+                <div class="mobile-view-info">
                     <div class="edit-name"> 
                         <p> Name </p>
                         <input type:"text" placeholder="name..."> 
@@ -118,12 +58,11 @@
                         <input type="date" id="birthday" name="birthday">
                     </div> 
                 </div>
+                <div class="save"> <button type="Save"> Save </button></div>
+                <div class="cancel"> <a href="./profile-page.html"> <button type="cancel"> Cancel </button> </a> </div>
             </div>
         </div>
             
-            <!-- tweet button in mobile -->
-            <div class="write-mobile tweet-mobile-button"> <img src="./img/write.png"> </div>
-
             <!-- This nav bar will apear in screens less than 950px-->
             <div class="mobile-footer">
                 <div class="home-mobile">
@@ -138,58 +77,7 @@
             </div>
             <!-- end of the phone header-->
 
-        </div>
-        <!-- end of the feed section-->
-
-        <!-- start of the search section-->
-        <div class="search-section search-shrink hide-mobile">
-
-            <a href="./search-page.html">
-                <div class="search">
-                    <button class="search-button flex">  <img src="./img/search-icon.png"> Search Twitter </button>
-                </div>
-            </a>
-
-            <div class="who-to-follow search-shrink">
-                <p> Who to follow </p>
-                <div class="choices ">
-                    <div class="choice flex tablet-choices">
-                        <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                        <div class="user-info"> 
-                            <div class="user_name"><h4> User name </h4></div>
-                            <div class="user_tag"><h5> user tag </h5></div>
-                        </div>
-                        <div class="follow follow-tablet">
-                            <button type="submit"> Follow </button>
-                        </div>
-                    </div>
-                    <div class="choice flex tablet-choices">
-                        <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                        <div class="user-info"> 
-                            <div class="user_name"><h4> User name </h4></div>
-                            <div class="user_tag"><h5> user tag </h5></div>
-                        </div>
-                        <div class="follow follow-tablet">
-                            <button type="submit"> Follow </button>
-                        </div>
-                    </div>
-                    <div class="choice flex tablet-choices">
-                        <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                        <div class="user-info"> 
-                            <div class="user_name"><h4> User name </h4></div>
-                            <div class="user_tag"><h5> user tag </h5></div>
-                        </div>
-                        <div class="follow follow-tablet">
-                            <button type="submit"> Follow </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of the search section-->
-
     </div>
-
     <script src="./js/feed_page.js"></script>
   </body>
 </html>  
