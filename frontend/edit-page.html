@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Tweep / Twitter </title>
+    <title> Edit / Twitter </title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mediaquery.css" />
     <link rel="stylesheet" href="./css/profile-page.css" />
-    <link rel="stylesheet" href="./css/tweep-page.css" />
     <link rel="icon" type="image/x-icon" href="./img/logo1.png" />
   </head>
   <body>
@@ -30,8 +29,8 @@
                 </a>
                 <a href="./profile-page.html"> 
                     <div class="profile flex">
-                        <div class="icon tablet-pic"> <img src="./img/profile-empty.png"> </div>
-                        <div class="profile-selects tablet-view hide-mobile"> <h3 > Profile </h3> </div>
+                        <div class="icon tablet-pic"> <img src="./img/profile-black.png"> </div>
+                        <div class="profile-selects tablet-view hide-mobile"> <h3 class="profile-selected"> Profile </h3> </div>
                     </div>
                 </a>
             </div>
@@ -65,7 +64,7 @@
                     <div class="user flex">
                         <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                         <div class="user-info tablet-view hide-mobile"> 
-                            <div class="user_name"> <h4> User name </h4></div>
+                            <div class="user_name"><h4> User name </h4></div>
                             <div class="user_tag"> <h5> @tag </h5></div>
                         </div>
                         <div class="more tablet-view hide-mobile">
@@ -94,77 +93,33 @@
             </div>
             <!-- end of the phone header-->
 
-            <div class="upper-bar hide-mobile flex">
-                <a href="./home-page.html"> <img class="arrow" src="./img/arrow.png"> </a>
-                <div class="header-user-info">
-                    <div class="user_name"> user name </div>
-                    <div class="followe-number"> 0 follower </div>
-                </div>
-            </div>
-
             <div class="user-whole-profile"> 
                 <div class="header">
                     <div class="pictures">
                         <div class="header-image"> </div>
-                        <div class="profile-pic profile-pic-adjust profile-pic-adjust-mobile"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    </div>
-                    <div class="follow follow-block flex"> 
-                        <button class="block"> <img src="./img/block.png"> </button>
-                        <button class="button-adjust-mobile" type="submit"> Follow </button> 
+                        <div> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                     </div>
                 </div>
                 <div class="information mobile-view-info">
-                    <div class="user_name"> user name <br> <span class="user_tag">  @user </span> </div>
-                    <div class="bio"> hi </div>
-                    <div class="birthday flex">
-                        <div class="calendar"> <img src="./img/calendar.png"> </div>
-                        <div class="birthday-date"> 22/05/1996 </div>
+                    <div class="edit-name"> 
+                        <p> Name </p>
+                        <input type:"text" placeholder="name..."> 
                     </div>
-                    <div class="numbers flex">
-                        <div class="number-followes"> 0 Following </div>
-                        <div class="number-followes"> 0 Followers </div>
+                    <div class="edit-tag"> 
+                        <p> Tag </p>
+                        <input type:"text" placeholder="@..."> 
                     </div>
-                    <div class="page-parts flex">
-                        <div class="profile-tweets"> <button type="button" > Tweets </button></div>
-                        <div class="profile-tweets"> <button type="button" > Media </button></div>
-                        <div class="profile-tweets"> <button type="button" > Like </button></div>
+                    <div class="edit-bio"> 
+                        <p> Bio </p>
+                        <input type:"text" placeholder="Bio"> 
                     </div>
+                    <div class="Edit birthday">
+                        <p> Edit Birthday </p>
+                        <input type="date" id="birthday" name="birthday">
+                    </div> 
                 </div>
             </div>
-
-
-            <div class="no-media-tweet">
-                <div class="tweet-more"> ... </div>
-                <div class="contant flex">
-                    <div class="tweep-picture"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div>
-                        <div class="tweep-info">
-                            <div class="tweep-name"> user name </div>
-                            <div class="tweep-tag"> @person </div>
-                            <div class="tweet-time"> 8h </div>
-                        </div>
-                        <div class="tweet-contant"> hello here </div>
-                    </div>
-                </div>
-                <div class="like"> <img src="./img/like.png"> </div>
-            </div>
-
-            <div class="media-tweet">
-                <div class="tweet-more"> ... </div>
-                <div class="contant flex">
-                    <div class="tweep-picture"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div>
-                        <div class="tweep-info">
-                            <div class="tweep-name"> user name  </div>
-                            <div class="tweep-tag"> @person .  </div>
-                            <div class="tweet-time"> 6h </div>
-                        </div>
-                        <div class="tweet-contant"> hello I'm here  </div>
-                        <div class="tweet-media"> <img src="./img/default_profile.png"> </div>
-                    </div>
-                </div>
-                <div class="like"> <img src="./img/like.png"> </div>
-            </div>
+        </div>
             
             <!-- tweet button in mobile -->
             <div class="write-mobile tweet-mobile-button"> <img src="./img/write.png"> </div>
