@@ -101,6 +101,10 @@
         width: 4vw;
         top: 50%;
     }
+
+    .profile-pic-adjust > img {
+        top: 140px !important;
+    }
 }
 
 @media only screen and  (max-width:949px) {
@@ -174,6 +178,18 @@
     .search-mobile > img {
         height: 30px;
         width: auto;
+    }
+
+    .profile-pic-adjust-mobile > img {
+        top: 120px !important;
+    }
+
+    .button-adjust-mobile {
+        margin-bottom: 4vw;
+    }
+
+    .mobile-view-info {
+        margin:  0vw 3vw;
     }
 
 }  

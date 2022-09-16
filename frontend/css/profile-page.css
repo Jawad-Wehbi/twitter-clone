@@ -35,3 +35,79 @@
     line-height: 33px;
 }
 
+.birthday {
+    justify-content: left;
+    align-items: center;
+}
+
+.calendar >img {
+    width: 20px;
+    margin-right: 1vw
+}
+
+.numbers {
+    justify-content: left;
+    align-items: center;
+}
+
+.numbers > div {
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+}
+
+.user_name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.user_tag {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0cm;
+}
+
+.edit-profile {
+    background: #D9D9D9;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    border: 0cm;
+    padding: 0.5vw 2vw;
+    margin-top: 1vw;
+    margin-right: 1vw;
+}
+
+.edit-flex {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.profile-pic >img {
+    position: absolute;
+    top: 11vw;
+    width: 133px;
+    height: 131px;
+    background: #D9D9D9;
+    border: 5px solid #FFFFFF;
+    border-radius: 200px;
+    margin-left: 2vw;
+}
+
+.header-image {
+    position: relative;
+    height: 140px;
+    background: #D9D9D9;
+    width: 100%;
+}
+
+.header-user-info {
+    margin-left: 1vw;
+}
+
+.upper-bar {
+    align-items: center;
+}
