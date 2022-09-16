@@ -37,6 +37,7 @@
                 <button id="side-tweet-button" class="shrink-button" type="submit"> Tweet <img class="tweet-tablet-button tablet-tweet-visible" src="./img/write.png"> </button>
             </div>
 
+            <!-- tweet pop up -->
             <div class="tweet-pop-up tablet-tweet-box">
                 <form id="tweet-pop" class="tweet-pop">
                     <div class="what-s-happening flex">
@@ -44,7 +45,14 @@
                         <div class="text"> <textarea class="pop-tweet-area shrink-input" placeholder="What's happening?"></textarea> </div>
                     </div>
                     <div class="lower-section flex pop-tweet-tablet">
-                        <div class="media"> <img src="./img/media.png"> </div>
+                        <div class="media"> 
+                            <div class="upload">
+                                <button class="btn-wrapper"> 
+                                    <i class="img-upload"> <img src="./img/media.png"> </i>
+                                    <input class="btn-warning" accept="image/jpeg,image/png,image/webp" type="file" >
+                                </button>
+                            </div>
+                        </div>
                         <div> <button class="tweet-button" type="submit"> Tweet </button> </div>
                     </div>
                 </form>   
@@ -102,7 +110,14 @@
                     <div class="text"> <textarea id="tweet-text" class="tweet-area" placeholder="What's happening?"></textarea> </div>
                 </div>
                 <div class="lower-section flex">
-                    <div class="media"> <img src="./img/media.png"> </div>
+                    <div class="media"> 
+                        <div class="upload">
+                            <button class="btn-wrapper"> 
+                                <i class="img-upload"> <img src="./img/media.png"> </i>
+                                <input class="btn-warning" accept="image/jpeg,image/png,image/webp" type="file" >
+                            </button>
+                        </div>
+                    </div>
                     <div> <button class="tweet-button" type="submit"> Tweet </button> </div>
                 </div>
             </div>
@@ -120,7 +135,10 @@
                         <div class="tweet-contant"> hello here </div>
                     </div>
                 </div>
-                <div class="like"> <img src="./img/like.png"> </div>
+                <div class="like">
+                    <img src="./img/like.png"> 
+                    <div class="heart-shape"></div>
+                </div>
             </div>
 
             <div class="media-tweet">
