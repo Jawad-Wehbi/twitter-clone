@@ -1,0 +1,93 @@
+/* CSS reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page{
+    display: flex;
+
+}
+
+#leftSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    text-align: center;
+    height: 95vh;
+    max-width: 495vw;
+    position: relative;
+    padding: auto;
+    background-image: url('../../assets/signupbackground.png');
+}
+
+.greatLogo{
+    width: 359.5px;
+    height: 292.3px;
+    fill: rgb(255, 255, 255);
+}
+#rightSection{
+    display: flex;
+    width:45vw;
+    height: 95vh;
+    align-items: center;
+
+}
+.rightContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    z-index: 0;
+    height: 70vh;
+    padding:5vh;
+    width: 35vw;
+}
+#happeningNow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+
+}
+
+#happeningNow >h1{
+    font-size: 4rem;
+}
+
+#happeningNow >h3{
+    font-size:2rem;
+}
+
+#signUp{
+    border-radius: 45.5px;
+    height: 5vw;
+
+}
+
+.signUpbtn{
+    height: 40px;
+    border-radius: 45.5px;
+    width: 300px;
+    background-color: #1D9BF0 ;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.terms{
+    font-size: xx-small;
+}
+.signinbtn{
+    height: 40px;
+    border-radius: 45.5px;
+    width: 300px;
+    background-color: #1d9cf000 ;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
