@@ -1,0 +1,18 @@
+.block > img {
+    width: 25px;
+    height: 25px
+}
+
+.block {
+    background-color: transparent !important;
+} 
+
+.follow-block {
+    margin: 1vw 0vw;
+    width: 100%;
+    justify-content: right;
+}
+
+.follow-block > button {
+    margin: 0vw 1vw;
+}
