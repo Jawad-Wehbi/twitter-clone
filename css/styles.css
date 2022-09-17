@@ -8,6 +8,7 @@
 }
 #page{
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -22,6 +23,7 @@
     position: relative;
     padding: auto;
     background-image: url('../../assets/signupbackground.png');
+    flex: 1 1;
 }
 
 .greatLogo{
@@ -103,6 +105,39 @@
     text-align: center;
     padding: auto;
     margin-top: 0.8vh;
+    margin-bottom: 1vh;
     word-spacing: 5px;
     font-size: 13px;
+}
+
+
+  @media only screen and (max-width: 975px) {
+    #page {
+      flex-wrap: wrap-reverse;
+      height: fit-content;
+    }
+
+    #leftSection {
+        width: 100vw;
+        height: fit-content;
+        align-self: center;
+    }
+    #rightSection{
+        width: 100vw;
+        height: fit-content;
+        align-self: center;
+    }
+    .rightContent{
+        min-width: none;
+    }
+    #happeningNow >h1{
+        font-size: 40px;
+        word-wrap: break-word;
+
+    }
+    #happeningNow >h3{
+        font-size: 23px;
+        word-wrap: break-word;
+
+    }
 }
