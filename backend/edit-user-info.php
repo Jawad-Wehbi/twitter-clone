@@ -18,7 +18,7 @@ $header = fetchimage($_POST["header"])
 
 
 $query = $mysqli->prepare(
-    "UPDATE table
+    "UPDATE users
     SET 
         name = $name,
         tag = $tag,
