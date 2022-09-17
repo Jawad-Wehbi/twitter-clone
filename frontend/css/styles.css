@@ -311,6 +311,7 @@ a {
     position: relative;
     display: flex;
     justify-content: right;
+    cursor: pointer;
 }
 
 .like > img {
