@@ -124,6 +124,8 @@ a {
     font-weight: 600;
     justify-self: center;
     visibility: hidden;
+    position: fixed;
+    bottom: 7vw;
 }
 
 
@@ -446,7 +448,7 @@ button {
 
 /* tweet pop up*/
 .tweet-pop-up{
-    top: 40%;
+    top: 50%;
     width: 18vw;
     height: 7vw;
     position: absolute;
