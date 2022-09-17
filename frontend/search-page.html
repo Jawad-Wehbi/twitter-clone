@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Search / Twitter </title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/mediaquery.css" />
-    <link rel="stylesheet" href="./css/search-page.css" />
-    <link rel="icon" type="image/x-icon" href="./img/logo1.png" />
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Search / Twitter </title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/mediaquery.css" />
+        <link rel="stylesheet" href="./css/search-page.css" />
+        <link rel="icon" type="image/x-icon" href="./img/logo1.png" />
+    </head>
+    <body>
         <!-- This nav bar will apear in screens less than 950px-->
         <div class="mobile-header">
             <div class="user-pic user-pic-mobile">
@@ -24,46 +24,66 @@
             </div>
         </div>
         <!-- end of the phone header-->
-    <!-- the page is a flex containing 3 parts-->
-    <div class ="container">
-        <div class="hide-mobile">
-            <a href="./home-page.html"> <img class="arrow" src="./img/arrow.png"> </a><h3> Search </h3>
-        </div>
 
+        <!-- search -->
+        <div class ="container">
+            <div class="hide-mobile">
+                <a href="./home-page.html"> <img class="arrow" src="./img/arrow.png"> </a><h3> Search </h3>
+            </div>
 
-        <!-- start of the search section-->
-        <div class="feed-section shrink-body body-resize">
+            <!-- start of the search section-->
+            <div class="feed-section shrink-body body-resize">
 
-            <!-- search header-->
-            <div>
+                <!-- search header-->
                 <div class="search flex">
                     <input tupe="text" placeholder="Search Twitter"> 
                     <button> <img class="search-image" src="./img/search-icon.png"> </button>
                 </div>
-            </div>
-                <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                <div class="user-info"> 
-                    <div class="user_name"><h4> User name </h4></div>
-                    <div class="user_tag"><h5> user tag </h5></div>
-                </div>
-                <div class="follow">
-                    <button type="submit"> Follow </button>
-                </div>  
+                <div class="searched_tweep flex">
+                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                    <div class="user-info"> 
+                        <div class="user_name"><h4> User name </h4></div>
+                        <div class="user_tag"><h5> user tag </h5></div>
+                    </div>
+                    <div class="follow">
+                        <button class="follow-button" type="submit"> Follow </button>
+                    </div>
+                </div> 
+                <div class="searched_tweep flex">
+                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                    <div class="user-info"> 
+                        <div class="user_name"><h4> User name </h4></div>
+                        <div class="user_tag"><h5> user tag </h5></div>
+                    </div>
+                    <div class="follow">
+                        <button class="follow-button" type="submit"> Follow </button>
+                    </div>
+                </div> 
+                <div class="searched_tweep flex">
+                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                    <div class="user-info"> 
+                        <div class="user_name"><h4> User name </h4></div>
+                        <div class="user_tag"><h5> user tag </h5></div>
+                    </div>
+                    <div class="follow">
+                        <button class="follow-button" type="submit"> Follow </button>
+                    </div>
+                </div> 
+            </div> 
         </div>
 
-            <!-- This nav bar will apear in screens less than 950px-->
-            <div class="mobile-footer">
-                <div class="home-mobile">
-                    <a href="./home-page.html"> <img class="footer-icons "src="./img/home-empty.png"> </a>
-                </div>
-                <div class="profile-mobile">
-                    <a href="./profile-page.html"> <img class="footer-icons "src="./img/profile-empty.png"> </a>
-                </div>
-                <div class="search-mobile">
-                    <a href="./search-page.html"> <img class="footer-icons" src="./img/search-icon.png"> </a> 
-                </div>
+        <!-- This nav bar will apear in screens less than 950px-->
+        <div class="mobile-footer">
+            <div class="home-mobile">
+                <a href="./home-page.html"> <img class="footer-icons "src="./img/home-empty.png"> </a>
             </div>
-    </div>
+            <div class="profile-mobile">
+                <a href="./profile-page.html"> <img class="footer-icons "src="./img/profile-empty.png"> </a>
+            </div>
+            <div class="search-mobile">
+                <a href="./search-page.html"> <img class="footer-icons" src="./img/search-icon.png"> </a> 
+            </div>
+        </div>
 
     <script src="./js/feed_page.js"></script>
   </body>

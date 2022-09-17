@@ -13,9 +13,10 @@ h3, p {
 }
 
 .search {
+    width: 100%;
     padding: 1vw;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
 
 .search > input {
@@ -36,5 +37,15 @@ h3, p {
 
 .search-image {
     width: auto;
-    height: 35px;
+    height: 30px;
+}
+
+.searched_tweep {
+    padding: 1vw;
+    align-items: center;
+}
+
+.user-info {
+    margin-left: 1vw;
+    width: 70%;
 }
