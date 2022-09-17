@@ -116,6 +116,7 @@
     .body-resize {
         width: 100vw;
         margin-left: 0vw;
+        border: 0cm;
     }
 
     .tweet-mobile-button {
