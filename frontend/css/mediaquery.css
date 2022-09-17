@@ -175,7 +175,7 @@
         width: auto;
     }
 
-    .search-mobile > img {
+    .footer-icons {
         height: 30px;
         width: auto;
     }
@@ -190,6 +190,12 @@
 
     .mobile-view-info {
         margin:  0vw 3vw;
+    }
+
+    .mobile-edit-view {
+        width: 80%;
+        height: 100%;
+        margin-bottom: 7vw;
     }
 
 }  
