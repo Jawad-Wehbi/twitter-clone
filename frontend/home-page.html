@@ -85,7 +85,7 @@
         <!-- end of the first part : meny bar-->
 
         <!-- start of the feed section-->
-        <div class="feed-section shrink-body body-resize">
+        <div id="container-feed" class="feed-section shrink-body body-resize">
 
             <!-- This nav bar will apear in screens less than 950px-->
             <div class="mobile-header">
@@ -105,7 +105,7 @@
                 <h3> Home </h3>
             </div>
 
-            <div class="tweet-section top-tablet hide-mobile">
+            <div id="tweet1-section" class="tweet-section top-tablet hide-mobile">
                 <div class="what-s-happening flex">
                     <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
                     <div class="text"> <textarea id="tweets" class="tweet-area" placeholder="What's happening?"></textarea> </div>
@@ -123,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="no-media-tweet">
+            <div id="tweet-type-1" class="no-media-tweet">
                 <div class="tweet-more"> ... </div>
                 <div class="contant flex">
                     <div class="tweep-picture"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
@@ -141,7 +141,7 @@
                 <div class="like"> <img class="like-button" src="./img/like.png"> </div>
             </div>
 
-            <div class="media-tweet">
+            <div id="tweet-tupe-2" class="media-tweet">
                 <div class="tweet-more"> ... </div>
                 <div class="contant flex">
                     <div class="tweep-picture"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
@@ -238,5 +238,7 @@
     </div>
     <script src="./js/tweet.js"></script>
     <script src="./js/feed_page.js"></script>
+    <script src="./js/follow.js"></script>
+    <script src="./js/like.js"></script>
   </body>
 </html>  

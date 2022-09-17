@@ -462,3 +462,8 @@ button {
     resize: none;
     padding: 1vw;
 }
+
+/* hoovered */
+.onhoover {
+    background-color: #71808B;
+}
