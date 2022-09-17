@@ -7,7 +7,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 include("connection.php");
 
 
-$query = $mysqli -> prepare("SELECT name, tag, birthday, bio FROM users Where iduser = 1");
+$query = $mysqli -> prepare("SELECT name, tag, birthday, bio, profilepic, headerpic FROM users WHERE iduser = 1");
 
 $query -> execute();
 $array = $query -> get_result();

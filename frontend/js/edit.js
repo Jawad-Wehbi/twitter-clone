@@ -21,10 +21,7 @@ save_button.addEventListener("click", () => {
     let profile_pictue = document.getElementById("profile_picture")
     save(user_name, user_tag,user_bio, user_birthday)
 })
-
-
-
-    
+ 
 function getBase64Image(img) {
     var canvas = document.createElement("canvas");
     canvas.width = img.width;
@@ -44,3 +41,4 @@ function fetchimage ()
     var bannerImg = document.getElementById('tableBanner');
      bannerImg.src = "data:image/png;base64," + dataImage;
 }
+
