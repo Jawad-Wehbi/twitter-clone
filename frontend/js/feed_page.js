@@ -30,7 +30,7 @@ const cloneType1Tweet = () => {
 }
 
 cloneType1Tweet()
-
+cloneType1Tweet()
 const cloneType2Tweet = () => {
     const div = document.getElementById("tweet-tupe-2")
     const body = document.getElementById("container-feed")
@@ -41,3 +41,4 @@ const cloneType2Tweet = () => {
 }
 
 cloneType2Tweet()
+cloneType1Tweet()
