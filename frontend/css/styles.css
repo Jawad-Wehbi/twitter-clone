@@ -139,6 +139,7 @@ a {
     border-bottom: 0cm;
     border-width: 1px;
     height: 100%;
+    min-height: 100vh;
 }
 
 .upper-bar {

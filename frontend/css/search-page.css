@@ -1,0 +1,40 @@
+.container {
+    padding: 0vw 5vw;
+}
+
+h3, p { 
+    font-weight: 600;
+    margin: 1vw 0vw 1vw 0vw;
+    color: #0F9AFB;
+}
+
+.arrow {
+    padding: 1vw 0vw 0vw 0vw;
+}
+
+.search {
+    padding: 1vw;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.search > input {
+    padding: 1vw 1vw;
+    border-radius: 50px;
+    background-color: #EFF3F4;
+    border: 0cm;
+    width: 70%;
+}
+
+.search > button {
+    padding: 0vw 1vw;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    border: 0cm;
+}
+
+.search-image {
+    width: auto;
+    height: 35px;
+}

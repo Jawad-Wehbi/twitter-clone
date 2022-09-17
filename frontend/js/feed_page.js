@@ -6,6 +6,11 @@ user_box.addEventListener("click", function(){
     log_out.classList.toggle("show");
 });
 
+const setting_botton = document.getElementById("mobile-setting")
+setting_botton.addEventListener("click", function(){
+    log_out.classList.toggle("show");
+});
+
 // toggle the tweet pop up 
 const pop_up = document.getElementById("tweet-pop")
 const tweet_button = document.getElementById("side-tweet-button")

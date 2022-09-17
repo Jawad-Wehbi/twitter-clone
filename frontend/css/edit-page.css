@@ -40,3 +40,7 @@ button {
 .cancel {
     background-color: black;
 }
+
+.pop-up-log-out {
+    display: none;
+}
