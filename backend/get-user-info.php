@@ -4,21 +4,21 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
 header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Request-With');
 
-include_once "connection.php";
+include("connection.php");
 
 
-$sql = "SELECT user-id, name, tag, birthday, bio, profilepic, headerpic FROM users";
+$query = $mysqli -> prepare("SELECT name, tag, birthday, bio FROM users Where iduser = 1");
 
-$statement = $connection->prepare($sql);
-$statement->execute();
-$data_array = $statement->get_result();
+$query -> execute();
+$array = $query -> get_result();
 
 $response = [];
 
-while ($row = $data_array->fetch_assoc()) {
-    $response[] = $row;
+while($a = $array->fetch_assoc()){
+    $response[] = $a;
 }
 
-echo json_encode($response);
+$json = json_encode($response);
+echo $json;
 
 ?>

@@ -6,12 +6,15 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include_once "connection.php";
 
+// to get all info about the tweet and about it's user
 
-$sql = "SELECT full_name, email, phone, message FROM tweets";
+$sql = "SELECT tweets.tweet-id, tweets.user-id, tweets.tweet-text, tweets.media, users.name, users.tag, users.profilepic 
+FROM tweets INNER JOIN users ON tweets.user-id = users.user-id";
 
 $statement = $connection->prepare($sql);
 $statement->execute();
 $data_array = $statement->get_result();
+
 
 $response = [];
 
