@@ -6,8 +6,8 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-//$search = $_POST["ja"];
-$query = $mysqli -> prepare("SELECT * FROM users WhERE name LIKE 'ja%' ");
+$search = $_POST["search"]
+$query = $mysqli -> prepare("SELECT * FROM users WhERE name LIKE '$search%' ");
 
 $query -> execute();
 $array = $query -> get_result();

@@ -35,40 +35,32 @@
             <div class="feed-section shrink-body body-resize">
 
                 <!-- search header-->
-                <div class="search flex">
-                    <input tupe="text" placeholder="Search Twitter"> 
-                    <button> <img class="search-image" src="./img/search-icon.png"> </button>
+                <form action="search.php" method="post">
+                    <div class="search flex">
+                        <input id="search-input" name="search" type="text" placeholder="Search Twitter"> 
+                        <button id="search-button"> <img class="search-image" src="./img/search-icon.png"> </button>
+                    </div>
+                </form>
+                <div class="searched_tweep flex">
+                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                    <div class="user-info"> 
+                        <div class="user_name"><h4> User name </h4></div>
+                        <div class="user_tag"><h5> user tag </h5></div>
+                    </div>
+                    <div class="follow">
+                        <button class="follow-button"  type="submit"> Follow </button>
+                    </div>
+                </div> 
+                <div class="searched_tweep flex">
+                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                    <div class="user-info"> 
+                        <div class="user_name"><h4> User name </h4></div>
+                        <div class="user_tag"><h5> user tag </h5></div>
+                    </div>
+                    <div class="follow">
+                        <button class="follow-button"  type="submit"> Follow </button>
+                    </div>
                 </div>
-                <div class="searched_tweep flex">
-                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div class="user-info"> 
-                        <div class="user_name"><h4> User name </h4></div>
-                        <div class="user_tag"><h5> user tag </h5></div>
-                    </div>
-                    <div class="follow">
-                        <button class="follow-button"  type="submit"> Follow </button>
-                    </div>
-                </div> 
-                <div class="searched_tweep flex">
-                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div class="user-info"> 
-                        <div class="user_name"><h4> User name </h4></div>
-                        <div class="user_tag"><h5> user tag </h5></div>
-                    </div>
-                    <div class="follow">
-                        <button class="follow-button"  type="submit"> Follow </button>
-                    </div>
-                </div> 
-                <div class="searched_tweep flex">
-                    <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
-                    <div class="user-info"> 
-                        <div class="user_name"><h4> User name </h4></div>
-                        <div class="user_tag"><h5> user tag </h5></div>
-                    </div>
-                    <div class="follow">
-                        <button class="follow-button" type="submit"> Follow </button>
-                    </div>
-                </div> 
             </div> 
         </div>
 
@@ -85,7 +77,7 @@
             </div>
         </div>
 
-    <script src="./js/feed_page.js"></script>
     <script src="./js/follow.js"></script>
+    <<script src="./js/search.js"></script>
   </body>
 </html>  

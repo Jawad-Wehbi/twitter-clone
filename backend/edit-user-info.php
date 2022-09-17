@@ -6,13 +6,29 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-if (isset($_POST["jawad"])) {
-    $name = $_POST["jawad"];}
+$id = $_POST["id"]
+$name = $_POST["name"]
+$tag = $_POST["tag"]
+$bio = $_POST["bio"]
+$birthday = $_POST["birthday"]
 
-if (isset($_POST["here"])) {
-    $bio = $_POST["here"];}
 
-$query = $mysqli->prepare("INSERT INTO users(name, bio) VALUE (?, ?)");
+$picture = fetchimage($_POST["picture"])
+$header = fetchimage($_POST["header"])
+
+
+$query = $mysqli->prepare(
+    "UPDATE table
+    SET 
+        name = $name,
+        tag = $tag,
+        bio = $bio,
+        birthday = $birthday,
+        profilepic = $picture,
+        headerpic = $header
+    WHERE
+        iduser = $id;"
+);
 
 $query->bind_param("ss", $name, $bio);
 $query->execute();
@@ -21,5 +37,14 @@ $response = [];
 $response["success"] = true;
 
 echo json_encode($response);
+
+
+    
+function fetchimage ()
+{
+    var dataImage = localStorage.getItem('imgData');
+    var bannerImg = document.getElementById('tableBanner');
+     bannerImg.src = "data:image/png;base64," + dataImage;
+}
 
 ?>
