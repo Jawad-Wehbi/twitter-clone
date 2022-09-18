@@ -22,3 +22,13 @@ const popin = () => {
 }
 
 signInButton.addEventListener("click", popin);
+
+const close = document.getElementById("close")
+const closewindow = () => {
+    popUpsignUp.style.display = "none";
+    popUpsignIn.style.display = "none";
+}
+
+signInButton.addEventListener("click", close);
+signUpButton.addEventListener("click", close);
+
