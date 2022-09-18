@@ -5,18 +5,25 @@ include("connection.php");
 $name=$_POST["name"];
 $phone=$_POST["phone"];
 $email=$_POST["email"];
-$birthdate=$_POST["birthdate"];
+$birthday = $_POST["birthday"];
 $password=$_POST["password"];
 
-$responces= 
+$response = [];
 
-$sql="SELECT email FROM users WHERE email=$email";
-$resultemail = $mysqli->query($sql);
-$sql="SELECT phone FROM users WHERE phone=$phone";
-$resultphone = $mysqli->query($sql);
+$emailsql="SELECT email FROM users WHERE email=$email";
+$resultemail = $mysqli->query($emailsql);
+$phonesql="SELECT phone FROM users WHERE phone=$phone";
+$resultphone = $mysqli->query($phonesql);
 
 if ($resultemail=$email || $resultphone=$phone){
-    ;
+    $response["success"] = false;
+    $response["why"] = "email or phone";
+    die();
 }
-else
+
+$sql = "INSERT INTO users (nam, phone, email, birthday, password) value (?, ?, ?, ?, ?)";
+$mysqli->prepare($emailsql);
+
+$query
+
 ?>
