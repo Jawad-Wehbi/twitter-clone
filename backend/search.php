@@ -9,8 +9,7 @@ include("connection.php");
 if (isset($_POST["search"])) {
 $search = $_POST["search"]
 
-$query = $mysqli -> prepare("SELECT name, tag, profilepic FROM users WhERE name LIKE '$search%'");
-$query->bind_param("s", $search);
+$query = $mysqli -> prepare("SELECT name, tag, profilepic FROM users WhERE name LIKE ''$search'%' " );
 $query -> execute();
 $array = $query -> get_result();
 

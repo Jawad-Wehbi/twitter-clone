@@ -19,13 +19,13 @@ if (isset($_POST["iduser"]) && isset($_POST["name"]) && isset($_POST["tag"]) && 
 
     $query = $mysqli->prepare("UPDATE TABLE users (name, tag, bio, birthday, profilepic, headerpic) 
     SET 
-        name = $name,
-        tag = $tag,
-        bio = $bio,
-        birthday = $birthday, 
-        profilepic = $picture,
-        headerpic = $header
-        WHERE iduser = $iduser");
+        name = '$name',
+        tag = '$tag',
+        bio = '$bio',
+        birthday = '$birthday', 
+        profilepic = '$picture',
+        headerpic = '$header'
+        WHERE iduser = '$iduser' ");
 
     $query->execute();
     

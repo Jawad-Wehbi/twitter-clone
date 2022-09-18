@@ -10,7 +10,7 @@ block.addEventListener("click", () => {
         variables.append("iduser", 14);
         variables.append("idblocked", 15);
 
-        fetch('http://localhost/twitter%20clone/backend/like.php', {
+        fetch('http://localhost/twitter%20clone/backend/block.php', {
             mode: "no-cors",
             method: "POST",
             body: variables,

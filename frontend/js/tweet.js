@@ -42,6 +42,7 @@ tweet_button1.addEventListener("click" , ()=> {
 
 })
 
+// tweet with media (not complete)
 pic_button1.addEventListener("click" , ()=> { 
     let files = [],
     upload = document.getElementById("upload");

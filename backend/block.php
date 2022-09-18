@@ -7,17 +7,16 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 include("connection.php");
 
 if (isset($_POST["iduser"]) && isset($_POST["idblocked"])) {
-$id = $_POST["iduser"];
-$blockedid = $_POST["idblocked"];
+$iduser = $_POST["iduser"];
+$idblocked = $_POST["idblocked"];
 
 $query = $mysqli->prepare(
-    "DELETE FROM followers
-    WHERE (iduser = $id and idfollowed = $blockedid) or (iduser = $blockedid  and idfollowed = $id)");
+    "DELETE FROM followers WHERE (iduser = '$iduser' and idfollowed = '$idblocked') or (iduser = '$idblocked'  and idfollowed = '$iduser')");
 
 $query->execute();
 
 $query2 = $mysqli->prepare("INSERT INTO blocks (iduser, idblocked) VALUES (?, ?)");
-$query2->bind_param("ss", $id, $blockedid);
+$query2->bind_param("ss", $iduser, $idblocked);
 
 $query2->execute();
 
