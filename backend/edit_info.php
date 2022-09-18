@@ -6,15 +6,15 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-// since where working on the first user account
+if (isset($_POST["iduser"]) && isset($_POST["name"]) && isset($_POST["tag"]) && isset($_POST["bio"]) && isset($_POST["birthday"]) && isset($_POST["profilepic"]) && isset($_POST["headerpic"])){
     $iduser = $_POST["iduser"];
     $name = $_POST["name"];
     $tag = $_POST["tag"];
     $bio = $_POST["bio"];
     $birthday = $_POST["birthday"];
 
-    $picture = $_POST["picture"];
-    $header = $_POST["header"];
+    $picture = $_POST["profilepic"];
+    $header = $_POST["headerpic"];
 
 
     $query = $mysqli->prepare("UPDATE TABLE users(name, tag, bio, birthday, profilepic, headerpic) 
@@ -34,4 +34,5 @@ include("connection.php");
     $response["success"] = true;
 
     echo json_encode($response);
+} else { echo "missing variable";}
 ?>

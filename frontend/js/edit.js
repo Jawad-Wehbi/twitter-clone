@@ -10,8 +10,8 @@ save.addEventListener('submit', function () {
     let tag = document.getElementById("user_tag").value;
     let bio = document.getElementById("user_bio").value;
     let birthday = document.getElementById("user_birthday").value;
-    let profilepic = document.getElementById("profile-picture").value;
-    let headerpic = document.getElementById("header-picture").value;
+    //let profilepic = document.getElementById("profile-picture").value;
+    //let headerpic = document.getElementById("header-picture").value;
     
     let newpic = getBase64Image(profilepic);
     let newheader = getBase64Image(headerpic);
@@ -47,8 +47,8 @@ save.addEventListener('submit', function () {
     document.getElementById("user_tag").value = "";
     document.getElementById("user_bio").value = "";
     document.getElementById("user_birthday").value = "";
-    document.getElementById("profile-picture").value = "";
-    document.getElementById("header-picture").value = "";
+    //document.getElementById("profile-picture").value = "";
+    //document.getElementById("header-picture").value = "";
     
 });
 
