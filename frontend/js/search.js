@@ -2,14 +2,14 @@ const search_botton = document.getElementById("search-button");
 
 search_botton.addEventListener("click",() => {
     let search = document.getElementById("search-input").value;
+    
     const variables = new FormData();
     variables.append("search", search)
-    console.log(search)
     
     fetch('http://localhost/twitter%20clone/backend/search.php', {
             mode: "no-cors",
             method: "POST",
-            body: variables,
+            body: variables
         })
             .then(result => {
                 if(result.status !== 200) {
@@ -19,6 +19,8 @@ search_botton.addEventListener("click",() => {
             })
             .then(data => console.log(data))
             .catch(err => console.log(err));
+ 
+
 }
 )
 

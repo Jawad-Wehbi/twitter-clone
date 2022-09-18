@@ -467,3 +467,10 @@ button {
 .onhoover {
     background-color: #EFF3F4;
 }
+
+/* blocked */
+.blocked {
+    color: red;
+    font-weight: 600;
+    font-size: 25px;
+}

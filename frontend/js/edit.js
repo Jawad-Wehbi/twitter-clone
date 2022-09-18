@@ -29,7 +29,7 @@ save.addEventListener('click', function () {
     fetch('http://localhost/twitter%20clone/backend/edit_info_php', {
         mode: "no-cors",
         method: "POST",
-        body: variables,
+        body: variables
     })
         .then(result => {
             if(result.status !== 200) {

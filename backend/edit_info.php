@@ -17,7 +17,7 @@ if (isset($_POST["iduser"]) && isset($_POST["name"]) && isset($_POST["tag"]) && 
     $header = $_POST["headerpic"];
 
 
-    $query = $mysqli->prepare("UPDATE TABLE users(name, tag, bio, birthday, profilepic, headerpic) 
+    $query = $mysqli->prepare("UPDATE TABLE users (name, tag, bio, birthday, profilepic, headerpic) 
     SET 
         name = $name,
         tag = $tag,
@@ -25,8 +25,7 @@ if (isset($_POST["iduser"]) && isset($_POST["name"]) && isset($_POST["tag"]) && 
         birthday = $birthday, 
         profilepic = $picture,
         headerpic = $header
-        
-        WHERE iduser = $iduser;");
+        WHERE iduser = $iduser");
 
     $query->execute();
     

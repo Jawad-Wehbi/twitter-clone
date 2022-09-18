@@ -1,17 +1,19 @@
-// Like
-// still have to retrieve idtweet and iduser
-const like_bottons = document.querySelectorAll(".like-button");
-like_bottons.forEach((button) => {
-    button.addEventListener("click", () => {
-        button.src = "./img/liked.png";
+// block
+const block = document.getElementById("block");
+
+block.addEventListener("click", () => {
+        const blocked = document.getElementById("blocked");
+        blocked.innerHTML = "blocked";
+        blocked.classList.add("blocked")
+        
         const variables = new FormData();
-        variables.append("idtweet", 14);
-        variables.append("idliker", 15);
+        variables.append("iduser", 14);
+        variables.append("idblocked", 15);
 
         fetch('http://localhost/twitter%20clone/backend/like.php', {
             mode: "no-cors",
             method: "POST",
-            body: variables
+            body: variables,
         })
             .then(result => {
                 if(result.status !== 200) {
@@ -21,5 +23,4 @@ like_bottons.forEach((button) => {
             })
             .then(data => console.log(data))
             .catch(err => console.log(err));
- })
-});
+ });

@@ -9,7 +9,7 @@ include("connection.php");
 if (isset($_POST["search"])) {
 $search = $_POST["search"]
 
-$query = $mysqli -> prepare("SELECT name, tag, profilepic FROM users WhERE name LIKE '(?)%'; ");
+$query = $mysqli -> prepare("SELECT name, tag, profilepic FROM users WhERE name LIKE '$search%'");
 $query->bind_param("s", $search);
 $query -> execute();
 $array = $query -> get_result();
@@ -18,7 +18,7 @@ $response = [];
 
 while($a = $array->fetch_assoc()){
     $response[] = $a;
-}
+};
 
 $json = json_encode($response);
 echo $json;

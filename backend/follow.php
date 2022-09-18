@@ -5,7 +5,8 @@ header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
 header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Request-With');
 
 include("connection.php");
-
+if (isset($_POST["iduser"]) && isset($_POST["idfollowed"]))
+{
 $iduser = $_POST["iduser"];
 $idfollower = $_POST["idfollowed"];
 
@@ -17,5 +18,5 @@ $response = [];
 $response["success"] = true;
 
 echo json_encode($response);
-
+} else { echo "variable missing";}
 ?>

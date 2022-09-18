@@ -6,19 +6,24 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-$id = $_POST["id"]
-$blockedid = $_POST["blocked"]
+if (isset($_POST["iduser"]) && isset($_POST["idblocked"])) {
+$id = $_POST["iduser"];
+$blockedid = $_POST["idblocked"];
 
 $query = $mysqli->prepare(
     "DELETE FROM followers
-    WHERE (iduser = $id and id_followed = $blockedid) or (iduser = $blockedid  and id_followed = $id) ;"
-);
+    WHERE (iduser = $id and idfollowed = $blockedid) or (iduser = $blockedid  and idfollowed = $id)");
+
+$query->execute();
+
+$query2 = $mysqli->prepare("INSERT INTO blocks (iduser, idblocked) VALUES (?, ?)");
+$query2->bind_param("ss", $id, $blockedid);
 
 $query2->execute();
 
-$response2 = [];
-$response2["success"] = true;
+$response = [];
+$response["success"] = true;
 
-echo json_encode($response2);
-
+echo json_encode($response);
+} else { echo "missing variable";}
 ?>

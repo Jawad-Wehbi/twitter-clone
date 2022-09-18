@@ -6,8 +6,8 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-$iduser = $_POST["id"];
-$tweet = $_POST["tweet"];
+$iduser = $_POST["iduser"];
+$tweet = $_POST["tweettext"];
 $media = $_POST["media"];
 
 $query = $mysqli->prepare("INSERT INTO tweets(iduser, tweettext, media) VALUE (?, ?, ?)");

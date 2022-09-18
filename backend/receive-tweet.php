@@ -15,12 +15,11 @@ $statement = $connection->prepare($sql);
 $statement->execute();
 $data_array = $statement->get_result();
 
-
 $response = [];
 
 while ($row = $data_array->fetch_assoc()) {
     $response[] = $row;
-}
+};
 
 echo json_encode($response);
 

@@ -10,7 +10,7 @@ follow_buttons.forEach((button) => {
         fetch('http://localhost/twitter%20clone/backend/follow.php', {
             mode: "no-cors",
             method: "POST",
-            body: variables,
+            body: variables
         })
             .then(result => {
                 if(result.status !== 200) {

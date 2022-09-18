@@ -11,14 +11,35 @@ tweet_button1.addEventListener("click" , ()=> {
     } else { 
 
         const div = document.getElementById("tweet-type-1")
-        const reference = document.getElementById("tweet1-section")
         let clone = div.cloneNode(true);
         p = document.getElementById("p")
 
         document.getElementById("p").innerHTML = tweet;
         clone.classList.add("no-media-tweet")
         insertAfter(clone, div);
+
+        //api
+        const variables = new FormData();
+        variables.append("iduser", 14);
+        variables.append("tweettext", tweet);
+        variables.append("media", 0);
+
+        fetch('http://localhost/twitter%20clone/backend/send-tweet.php', {
+            mode: "no-cors",
+            method: "POST",
+            body: variables
+        })
+            .then(result => {
+                if(result.status !== 200) {
+                    throw new Error("Bad Server Responce");
+                }
+                return result.text();
+            })
+            .then(data => console.log(data))
+            .catch(err => console.log(err));
+
     }
+
 })
 
 pic_button1.addEventListener("click" , ()=> { 
