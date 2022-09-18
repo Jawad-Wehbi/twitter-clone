@@ -17,7 +17,8 @@ search_botton.addEventListener("click",() => {
                 }
                 return result.text();
             })
-            .then(data => console.log(data))
+            .then(data => 
+                {console.log(data.name)})
             .catch(err => console.log(err));
  
 
