@@ -6,8 +6,8 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-$iduser = $_POST["id"];
-$idfollower = $_POST["user"];
+$iduser = $_POST["iduser"];
+$idfollower = $_POST["idfollowed"];
 
 $query = $mysqli->prepare("INSERT INTO followers(iduser, idfollowed) VALUE (?, ?)");
 $query->bind_param("ss", $iduser, $idfollower);

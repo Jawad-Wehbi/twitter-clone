@@ -18,13 +18,13 @@ save.addEventListener('submit', function () {
 
 
     const variables = new FormData();
-    variables.append("id", iduser);
+    variables.append("iduser", 15);
     variables.append("name", name);
     variables.append("tag", tag);
     variables.append("bio", bio);
     variables.append("birthday", birthday);
-    variables.append("profilepic", newpic);
-    variables.append("headerpic", newheader);
+    variables.append("profilepic", "no");
+    variables.append("headerpic", "no");
 
     fetch('http://localhost/twitter%20clone/backend/edit_info_php', {
         mode: "no-cors",
@@ -39,7 +39,18 @@ save.addEventListener('submit', function () {
         })
         .then(data => console.log(data))
         .catch(err => console.log(err));
-})
+
+    //empty the inputs if the data is saved
+    const message = document.getElementById("save-message");
+    message.innerHTML = "Saved info"
+    document.getElementById("user_name").value = "";
+    document.getElementById("user_tag").value = "";
+    document.getElementById("user_bio").value = "";
+    document.getElementById("user_birthday").value = "";
+    document.getElementById("profile-picture").value = "";
+    document.getElementById("header-picture").value = "";
+    
+});
 
 function getBase64Image(img) {
     var canvas = document.createElement("canvas");

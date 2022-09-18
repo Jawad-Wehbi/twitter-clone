@@ -7,14 +7,14 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 include("connection.php");
 
 // since where working on the first user account
-    $iduser = $_POST["iduser"]
+    $iduser = $_POST["iduser"];
     $name = $_POST["name"];
     $tag = $_POST["tag"];
     $bio = $_POST["bio"];
     $birthday = $_POST["birthday"];
 
-    $picture = fetchimage($_POST["picture"]);
-    $header = fetchimage($_POST["header"]);
+    $picture = $_POST["picture"];
+    $header = $_POST["header"];
 
 
     $query = $mysqli->prepare("UPDATE TABLE users(name, tag, bio, birthday, profilepic, headerpic) 
