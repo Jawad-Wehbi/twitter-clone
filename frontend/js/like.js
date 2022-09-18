@@ -1,11 +1,12 @@
 // Like
+// still have to retrieve idtweet and iduser
 const like_bottons = document.querySelectorAll(".like-button");
 like_bottons.forEach((button) => {
     button.addEventListener("click", () => {
         button.src = "./img/liked.png";
-        
-        variables.append("idtweet", 14);
-        variables.append("idliker", 15);
+        const variables = new FormData();
+        variables.append("idtweet", idtweet);
+        variables.append("idliker", iduser);
 
         fetch('http://localhost/twitter%20clone/backend/like.php', {
             method: "POST",
