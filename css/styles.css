@@ -22,7 +22,7 @@
     max-width: 495vw;
     position: relative;
     padding: auto;
-    background-image: url('../../assets/signupbackground.png');
+    background-image: url('../assets/signupbackground.png');
     flex: 1 1;
 }
 
@@ -111,23 +111,65 @@
     word-spacing: 5px;
     font-size: 13px;
 }
-.show {
-    visibility: visible;
-}
-.poUpsignUp{
+.popUpsignIn{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: #a5a5a523;
+    padding: 3%;
+    align-items: center;
+}
+
+
+.popinContent{
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: white;
+width: 560px;
+height: 600px;
+border-radius: 20px;
+padding-inline: 20px;
+padding-bottom: 20px;
+align-items: center;
+}
+.signInHeader{
+    font-size: 20px;
+    color: black;
+}
+
+.popUpsignUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     z-index: 1;
     background-color: #00000034;
     padding: 3%;
 }
+.loginName{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+}
+.loginbtn{
+    height: 40px;
+    border-radius: 45.5px;
+    width: 300px;
+    background-color: #1D9BF0 ;
+    border: 0;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 .popUp{
+position: relative;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -138,6 +180,7 @@ border-radius: 20px;
 padding-inline: 20px;
 padding-bottom: 20px;
 }
+
 .close {
     font-size: 35px;
     font-weight: 600;
