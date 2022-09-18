@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Profile / Twitter </title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/mediaquery.css" />
+        <link rel="stylesheet" href="./css/profile-page.css" />
+        <link rel="icon" type="image/x-icon" href="./img/logo1.png" />
+    </head>
+    <body>
+    <!-- the page is a flex containing 3 parts-->
+    <div class ="container">
+
+        <!-- start of the first part : meny bar-->
+        <div class="menu-bar shrink-container tablet-menu-bar hide-mobile">
+            <div class="menu">
+                <div class="flex ">
+                    <div class="logo tablet-pic"> <img src="./img/logo.png"> </div>
+                    <div></div> 
+                </div>
+                <a href="./home-page.html"> 
+                <div class="home flex hoover-element">
+                    <div class="icon tablet-pic"> <img src="./img/home-empty.png"> </div>
+                    <div class="tablet-view hide-mobile"> <h3 class="home-unselect"> Home </h3> </div>
+                </div>
+                </a>
+                <a href="./profile-page.html"> 
+                    <div class="profile flex hoover-element">
+                        <div class="icon tablet-pic"> <img src="./img/profile-black.png"> </div>
+                        <div class="profile-selects tablet-view hide-mobile"> <h3 class="profile-selected"> Profile </h3> </div>
+                    </div>
+                </a>
+            </div>
+            <div class="tweet tweet-tablet"> 
+                <button id="side-tweet-button" class="shrink-button" type="submit"> Tweet <img class="tweet-tablet-button tablet-tweet-visible" src="./img/write.png"> </button>
+            </div>
+
+            <div class="tweet-pop-up tablet-tweet-box">
+                <form id="tweet-pop" class="tweet-pop">
+                    <div class="what-s-happening flex">
+                        <div class="user-pic tablet-view"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                        <div class="text"> <textarea class="pop-tweet-area shrink-input" placeholder="What's happening?"></textarea> </div>
+                    </div>
+                    <div class="lower-section flex pop-tweet-tablet">
+                        <div class="media"> <img src="./img/media.png"> </div>
+                        <div> <button class="tweet-button" type="submit"> Tweet </button> </div>
+                    </div>
+                </form>   
+            </div>
+
+            <!-- pop up place-->
+            <div class="pop-up-log-out">
+                <a href="./front-page.html">
+                    <button id="logout" class="logout shrink-button" type="submit"> Log out </button>
+                </a>
+            </div>
+            <!-- End of pop-->
+
+            <div class="user-button"> 
+                <button id="user_info" type="menu"> 
+                    <div class="user flex hoover-element">
+                        <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                        <div class="user-info tablet-view hide-mobile"> 
+                            <div class="user_name"><h4> User name </h4></div>
+                            <div class="user_tag"> <h5> @tag </h5></div>
+                        </div>
+                        <div class="more tablet-view hide-mobile">
+                            <p> ... </p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- end of the first part : meny bar-->
+
+        <!-- start of the feed section-->
+        <div class="feed-section shrink-body body-resize">
+
+            <!-- This nav bar will apear in screens less than 950px-->
+            <div class="mobile-header">
+                <div class="user-pic user-pic-mobile">
+                    <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';">
+                </div>
+                <div class="mobile-logo">
+                    <img src="./img/logo.png">
+                </div>
+                <div class="mobile-settings">
+                    <img src="./img/setting.png">
+                </div>
+            </div>
+            <!-- end of the phone header-->
+
+            <div class="upper-bar hide-mobile flex">
+                <a href="./home-page.html"> <img class="arrow" src="./img/arrow.png"> </a>
+                <div class="header-user-info">
+                    <div class="user_name"> user name </div>
+                    <div class="followe-number"> 0 follower </div>
+                </div>
+            </div>
+
+            <div class="user-whole-profile"> 
+                <div class="header">
+                    <div class="pictures">
+                        <div class="header-image"> </div>
+                        <div class="profile-pic profile-pic-adjust profile-pic-adjust-mobile"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                    </div>
+                    <div class="edit-flex"> <a href="./edit-page.html"> <button class="edit-profile button-adjust-mobile" type="submit"> Edit profile </button> </a></div>
+                </div>
+                <div class="information mobile-view-info">
+                    <div class="user_name"> Hala <br> <span class="user_tag">  @hala </span> </div>
+                    <div class="bio"> hi </div>
+                    <div class="birthday flex">
+                        <div class="calendar"> <img src="./img/calendar.png"> </div>
+                        <div class="birthday-date"> 22/05/1996 </div>
+                    </div>
+                    <div class="numbers flex">
+                        <div class="number-followes"> 0 Following </div>
+                        <div class="number-followes"> 0 Followers </div>
+                    </div>
+                    <div class="page-parts flex">
+                        <div class="profile-tweets hoover-element"> <button type="button" > Tweets </button></div>
+                        <div class="profile-tweets hoover-element"> <button type="button" > Media </button></div>
+                        <div class="profile-tweets hoover-element"> <button type="button" > Like </button></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="no-media-tweet hoover-element">
+                <div class="tweet-more"> ... </div>
+                <div class="contant flex">
+                    <div class="tweep-picture"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                    <div>
+                        <div class="tweep-info">
+                            <div class="tweep-name"> user name </div>
+                            <div class="tweep-tag"> @person </div>
+                            <div class="tweet-time"> 8h </div>
+                        </div>
+                        <div class="tweet-contant"> hello here </div>
+                    </div>
+                </div>
+                <div class="like"> <img class="like-button" src="./img/like.png"> </div>
+            </div>
+
+            <div class="media-tweet hoover-element">
+                <div class="tweet-more"> ... </div>
+                <div class="contant flex">
+                    <div class="tweep-picture"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                    <div>
+                        <div class="tweep-info">
+                            <div class="tweep-name"> Hala  </div>
+                            <div class="tweep-tag"> @hala .  </div>
+                            <div class="tweet-time"> 6h </div>
+                        </div>
+                        <div class="tweet-contant"> hello I'm here  </div>
+                        <div class="tweet-media"> <img src="./img/default_profile.png"> </div>
+                    </div>
+                </div>
+                <div class="like"> <img class="like-button" src="./img/like.png"> </div>
+            </div>
+            
+            <!-- tweet button in mobile -->
+            <div class="write-mobile tweet-mobile-button"> <img src="./img/write.png"> </div>
+
+            <!-- This nav bar will apear in screens less than 950px-->
+            <div class="mobile-footer">
+                <div class="home-mobile">
+                    <a href="./home-page.html"> <img class="footer-icons "src="./img/home-empty.png"> </a>
+                </div>
+                <div class="profile-mobile">
+                    <a href="./profile-page.html"> <img class="footer-icons "src="./img/profile-black.png"> </a>
+                </div>
+                <div class="search-mobile">
+                    <a href="./search-page.html"> <img class="footer-icons" src="./img/search-icon.png"> </a> 
+                </div>
+            </div>
+            <!-- end of the phone header-->
+
+        </div>
+        <!-- end of the feed section-->
+
+        <!-- start of the search section-->
+        <div class="search-section search-shrink hide-mobile">
+
+            <a href="./search-page.html">
+                <div class="search">
+                    <button class="search-button flex">  <img src="./img/search-icon.png"> Search Twitter </button>
+                </div>
+            </a>
+
+            <div class="who-to-follow search-shrink">
+                <p> Who to follow </p>
+                <div class="choices ">
+                    <div class="choice flex tablet-choices">
+                        <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                        <div class="user-info"> 
+                            <div class="user_name"><h4> User name </h4></div>
+                            <div class="user_tag"><h5> user tag </h5></div>
+                        </div>
+                        <div class="follow follow-tablet">
+                            <button class="follow-button"  type="submit"> Follow </button>
+                        </div>
+                    </div>
+                    <div class="choice flex tablet-choices">
+                        <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                        <div class="user-info"> 
+                            <div class="user_name"><h4> User name </h4></div>
+                            <div class="user_tag"><h5> user tag </h5></div>
+                        </div>
+                        <div class="follow follow-tablet">
+                            <button class="follow-button"  type="submit"> Follow </button>
+                        </div>
+                    </div>
+                    <div class="choice flex tablet-choices">
+                        <div class="user-pic"> <img src="./img/default_profile.png" onerror="this.src='images/not_found.png';"> </div>
+                        <div class="user-info"> 
+                            <div class="user_name"><h4> User name </h4></div>
+                            <div class="user_tag"><h5> user tag </h5></div>
+                        </div>
+                        <div class="follow follow-tablet">
+                            <button class="follow-button"  type="submit"> Follow </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of the search section-->
+
+    </div>
+
+    <script src="./js/feed_page.js"></script>
+    <script src="./js/hoover.js"></script>
+    <script src="./js/like.js"></script>
+    <script src="./js/follow.js"></script>
+    <script src="./js/hoover.js"></script>
+  </body>
+</html>  

@@ -1,0 +1,46 @@
+.container {
+    padding: 2vw 5vw;
+    border: 0cm;
+    width: 100%;
+    display: block;
+}
+
+h3, p { 
+    font-weight: 600;
+    margin: 1vw 0vw 1vw 0vw;
+    color: #0F9AFB;
+}
+
+.edit-box {
+    justify-content: space-around;
+}
+
+input {
+    width: 20vw;
+    height: 3vw;
+    border-top: 0cm;
+    border-right: 0cm;
+    border-left: 0cm;
+}
+
+button {
+    border-radius: 50px;
+    padding: 1vw 2vw;
+    margin-bottom: 1vw;
+    border: 0cm;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+
+.save > button {
+    background-color: #0F9AFB;
+}
+
+.cancel {
+    background-color: black;
+}
+
+.pop-up-log-out {
+    display: none;
+}
