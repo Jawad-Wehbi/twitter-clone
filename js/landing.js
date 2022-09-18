@@ -1,3 +1,4 @@
+// Sign-Up popUp
 const signUpButton = document.getElementById("signUpbtn");
 const popUpsignUp = document.getElementById("pop");
 

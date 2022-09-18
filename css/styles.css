@@ -53,6 +53,7 @@
 .smallLogo{
     width: 50px;
     height: 50px;
+    fill: #1D9BF0;
 }
 #happeningNow{
     display: flex;
@@ -122,8 +123,6 @@
     padding: 3%;
     align-items: center;
 }
-
-
 .popinContent{
 position: relative;
 display: flex;
@@ -141,7 +140,6 @@ align-items: center;
     font-size: 20px;
     color: black;
 }
-
 .popUpsignUp{
     display: flex;
     justify-content: center;
@@ -180,12 +178,11 @@ border-radius: 20px;
 padding-inline: 20px;
 padding-bottom: 20px;
 }
-
 .close {
     font-size: 35px;
     font-weight: 600;
     color: #1D9BF0;
-  }
+}
 .signUpHeader{
     font-size: 20px;
     color: black;
@@ -221,7 +218,6 @@ padding-bottom: 20px;
     font-size: large;
     color: #757575;
 }
-
 .Continue{
     height: 40px;
     border-radius: 45.5px;
@@ -235,7 +231,6 @@ padding-bottom: 20px;
 .dis-none{
     display: none;
 }
-
 
   @media only screen and (max-width: 975px) {
     #page {
