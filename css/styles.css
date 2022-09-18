@@ -50,6 +50,10 @@
     width: fit-content;
     min-width: 526px;
 }
+.smallLogo{
+    width: 50px;
+    height: 50px;
+}
 #happeningNow{
     display: flex;
     flex-direction: column;
