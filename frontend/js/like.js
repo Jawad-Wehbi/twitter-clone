@@ -9,6 +9,7 @@ like_bottons.forEach((button) => {
         variables.append("idliker", iduser);
 
         fetch('http://localhost/twitter%20clone/backend/like.php', {
+            mode: "no-cors",
             method: "POST",
             body: variables,
         })

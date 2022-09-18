@@ -18,7 +18,6 @@ tweet_button1.addEventListener("click" , ()=> {
         document.getElementById("p").innerHTML = tweet;
         clone.classList.add("no-media-tweet")
         insertAfter(clone, div);
-        
     }
 })
 

@@ -6,9 +6,11 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
+if (isset($_POST["search"])) {
 $search = $_POST["search"]
-$query = $mysqli -> prepare("SELECT * FROM users WhERE name LIKE '$search%' ");
 
+$query = $mysqli -> prepare("SELECT name, tag, profilepic FROM users WhERE name LIKE '(?)%'; ");
+$query->bind_param("s", $search);
 $query -> execute();
 $array = $query -> get_result();
 
@@ -20,5 +22,5 @@ while($a = $array->fetch_assoc()){
 
 $json = json_encode($response);
 echo $json;
-
+} else { echo "missing variable";}
 ?>
