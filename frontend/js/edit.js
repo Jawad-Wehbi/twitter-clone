@@ -5,7 +5,7 @@ const save = document.getElementById('save-button');
 //check the validation of the inputs
 //set the inputs to the actual data to send it to the query 
 
-save.addEventListener('submit', function () {
+save.addEventListener('click', function () {
     let name = document.getElementById("user_name").value;
     let tag = document.getElementById("user_tag").value;
     let bio = document.getElementById("user_bio").value;
@@ -13,11 +13,11 @@ save.addEventListener('submit', function () {
     //let profilepic = document.getElementById("profile-picture").value;
     //let headerpic = document.getElementById("header-picture").value;
     
-    let newpic = getBase64Image(profilepic);
-    let newheader = getBase64Image(headerpic);
-
+    //let newpic = getBase64Image(profilepic);
+    //let newheader = getBase64Image(headerpic);
 
     const variables = new FormData();
+
     variables.append("iduser", 15);
     variables.append("name", name);
     variables.append("tag", tag);
