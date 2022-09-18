@@ -1,0 +1,264 @@
+/* CSS reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#leftSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54vw;
+    text-align: center;
+    height: 95vh;
+    max-width: 495vw;
+    position: relative;
+    padding: auto;
+    background-image: url('../assets/signupbackground.png');
+    flex: 1 1;
+}
+
+.greatLogo{
+    width: 359.5px;
+    height: 292.3px;
+    fill: rgb(255, 255, 255);
+}
+#rightSection{
+    display: flex;
+    width:45vw;
+    height: 95vh;
+    align-items: center;
+    min-width: 615px;
+
+}
+.rightContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    z-index: 0;
+    height: 70vh;
+    padding:3vh;
+    width: fit-content;
+    min-width: 526px;
+}
+.smallLogo{
+    width: 50px;
+    height: 50px;
+    fill: #1D9BF0;
+}
+#happeningNow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+
+}
+
+#happeningNow >h1{
+    font-size: 4.5rem;
+}
+
+#happeningNow >h3{
+    font-size:2rem;
+}
+
+#signUp{
+    height: 5vw;
+    width: 300px;
+}
+
+.signUpbtn{
+    height: 40px;
+    border-radius: 45.5px;
+    width: 300px;
+    background-color: #1D9BF0 ;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.terms{
+    font-size: 11px;
+}
+.signinbtn{
+    height: 40px;
+    border-radius: 45.5px;
+    width: 300px;
+    background-color: #1d9cf000 ;
+    color: #1D9BF0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-color: #CFD9DE;
+    border-width: 2px;
+    margin-top: 18px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: auto;
+    margin-top: 0.8vh;
+    margin-bottom: 1vh;
+    word-spacing: 5px;
+    font-size: 13px;
+}
+.popUpsignIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: #a5a5a523;
+    padding: 3%;
+    align-items: center;
+}
+.popinContent{
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: white;
+width: 560px;
+height: 600px;
+border-radius: 20px;
+padding-inline: 20px;
+padding-bottom: 20px;
+align-items: center;
+}
+.signInHeader{
+    font-size: 20px;
+    color: black;
+}
+.popUpsignUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: #00000034;
+    padding: 3%;
+}
+.loginName{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+}
+.loginbtn{
+    height: 40px;
+    border-radius: 45.5px;
+    width: 300px;
+    background-color: #1D9BF0 ;
+    border: 0;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.popUp{
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: white;
+width: 560px;
+height: 600px;
+border-radius: 20px;
+padding-inline: 20px;
+padding-bottom: 20px;
+}
+.close {
+    font-size: 35px;
+    font-weight: 600;
+    color: #1D9BF0;
+}
+.signUpHeader{
+    font-size: 20px;
+    color: black;
+}
+.name-input{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+}
+.phone-input{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+}
+.email-input{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+}
+.password-input{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+}
+.birthdate{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+    color: #757575;
+}
+.Continue{
+    height: 40px;
+    border-radius: 45.5px;
+    width: 100px;
+    background-color: #1D9BF0 ;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.dis-none{
+    display: none;
+}
+
+  @media only screen and (max-width: 975px) {
+    #page {
+      flex-wrap: wrap-reverse;
+      height: fit-content;
+    }
+
+    #leftSection {
+        width: 100vw;
+        height: fit-content;
+        align-self: center;
+    }
+    #rightSection{
+        width: 100vw;
+        height: fit-content;
+        align-self: center;
+    }
+    .rightContent{
+        min-width: none;
+    }
+    #happeningNow >h1{
+        font-size: 40px;
+        word-wrap: break-word;
+
+    }
+    #happeningNow >h3{
+        font-size: 23px;
+        word-wrap: break-word;
+
+    }
+}
