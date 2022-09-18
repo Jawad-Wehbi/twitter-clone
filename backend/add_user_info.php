@@ -15,19 +15,11 @@ include("connection.php");
     //$picture = fetchimage($_POST["picture"]);
     //$header = fetchimage($_POST["header"]);
 
-    $query = $mysqli->prepare(
-        "UPDATE users
-        SET 
-            name = $name,
-            tag = $tag,
-            bio = $bio,
-            birthday = $birthday
-        HAVING
-            iduser = 1;"
-    );
 
+    $query = $mysqli->prepare("INSERT INTO users(name, tag, bio, birthday) VALUE (?, ?, ?, ?)");
+    $query->bind_param("ssss", $name, $tag, $bio, $birthday);
     $query->execute();
-
+    
     $response = [];
     $response["success"] = true;
 

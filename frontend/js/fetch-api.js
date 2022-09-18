@@ -7,8 +7,15 @@ async function getData() {
     const data = await response.json()
         
     data.forEach((line) => {
-        console.log(line.name)
+        
     })
+
+    const names = document.querySelectorAll(".user_name")
+    console.log(names.length)
+    names.forEach((one) => {
+    one.value = data.name
+    console.log(d)
+})
 }
 
 getData()

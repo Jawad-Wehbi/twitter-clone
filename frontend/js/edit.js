@@ -5,14 +5,24 @@ const form = document.getElementById('form');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const variables = new FormData(form);
-    const data = new URLSearchParams(variables)
+    const variables = new FormData(from);
+    // const data = new URLSearchParams(variables)
 
-    fetch('http://localhost/twitter%20clone/backend/edit-user-info.php', {
+    // variables.append("name", "issa");
+    // variables.append("tag", "tag");
+    // variables.append("bio", "hey");
+    // variables.append("birthday", "22/02/2000");
+
+    fetch('http://localhost/twitter%20clone/backend/edit_info_php', {
         method: "POST",
-        body: data,
+        body: variables,
     })
-        .then(res => res.json())
+        .then(result => {
+            if(result.status !== 200) {
+                throw new Error("Bad Server Responce");
+            }
+            return result.text();
+        })
         .then(data => console.log(data))
         .catch(err => console.log(err));
 })
