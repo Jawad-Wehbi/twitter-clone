@@ -167,6 +167,14 @@ padding-bottom: 20px;
     border-radius: 10px;
     font-size: large;
 }
+.birthdate{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+    color: #757575;
+}
+
 .Continue{
     height: 40px;
     border-radius: 45.5px;
@@ -177,7 +185,6 @@ padding-bottom: 20px;
     font-size: 1rem;
     font-weight: bold;
 }
-.continuebutton
 .dis-none{
     display: none;
 }
