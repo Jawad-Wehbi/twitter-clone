@@ -19,7 +19,6 @@ tweet_button1.addEventListener("click" , ()=> {
         clone.classList.add("no-media-tweet")
         insertAfter(clone, div);
         
-        localStorage.setItem("tweets", tweet)
     }
 })
 

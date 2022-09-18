@@ -5,11 +5,11 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 include_once "connection.php";
 
 
-$iduser = $_POST["id"];
-$tweet = $_POST["tweet"];
+$idtweet = $_POST["idtweet"];
+$idliker = $_POST["idliker"];
 
 $query = $mysqli->prepare("INSERT INTO likes(idweet, idliker ) VALUE (?, ?)");
-$query->bind_param("ss", $iduser, $tweet );
+$query->bind_param("ss", $idtweet, $idliker);
 $query->execute();
 
 $response = [];
