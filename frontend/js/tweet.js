@@ -32,7 +32,6 @@ pic_button1.addEventListener("click" , ()=> {
         files.push(upload.files[i].fileName);
     }}
 
-    
     console.log(files)
 })
 

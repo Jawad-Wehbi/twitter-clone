@@ -6,15 +6,15 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-$id = $_POST["id"]
-$name = $_POST["name"]
-$tag = $_POST["tag"]
-$bio = $_POST["bio"]
-$birthday = $_POST["birthday"]
+$id = $_POST["id"];
+$name = $_POST["name"];
+$tag = $_POST["tag"];
+$bio = $_POST["bio"];
+$birthday = $_POST["birthday"];
 
 
-$picture = fetchimage($_POST["picture"])
-$header = fetchimage($_POST["header"])
+$picture = fetchimage($_POST["picture"]);
+$header = fetchimage($_POST["header"]);
 
 
 $query = $mysqli->prepare(
@@ -25,7 +25,7 @@ $query = $mysqli->prepare(
         bio = $bio,
         birthday = $birthday,
         profilepic = $picture,
-        headerpic = $header
+        headerpic = $header 
     WHERE
         iduser = $id;"
 );

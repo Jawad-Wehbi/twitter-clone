@@ -8,7 +8,7 @@ include_once "connection.php";
 
 // to get all info about the tweet and about it's user
 
-$sql = "SELECT tweets.tweet-id, tweets.user-id, tweets.tweet-text, tweets.media, users.name, users.tag, users.profilepic 
+$sql = "SELECT tweets.idtweet, tweets.iduser, tweets.tweettext, tweets.media, users.name, users.tag, users.profilepic 
 FROM tweets INNER JOIN users ON tweets.user-id = users.user-id";
 
 $statement = $connection->prepare($sql);

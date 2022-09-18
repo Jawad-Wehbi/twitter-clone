@@ -18,9 +18,17 @@ save_button.addEventListener("click", () => {
     let user_tag = document.getElementById("user_tag").value;
     let user_bio = document.getElementById("user_bio").value;
     let user_birthday = document.getElementById("user_birthday").value;
-    let profile_pictue = document.getElementById("profile_picture")
+    //let profile_pictue = document.getElementById("profile_picture");
+    //let header_picture = document.getElementById("header_picture");
     save(user_name, user_tag,user_bio, user_birthday)
+    const message = document.getElementById("save-message")
+    message.innerHTML = " Info saved "
+    document.getElementById("user_name").value = "";
+    document.getElementById("user_tag").value = "";
+    document.getElementById("user_bio").value = "";
+    document.getElementById("user_birthday").value = "";
 })
+
  
 function getBase64Image(img) {
     var canvas = document.createElement("canvas");

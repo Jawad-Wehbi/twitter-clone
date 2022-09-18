@@ -41,36 +41,37 @@
                 <div class="pictures-part"> 
                     <div class="header">
                         <p> Change the header </p>
-                        <input id="header-picture" class="mobile-edit-view" accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
+                        <input id="header-picture" name="header" class="mobile-edit-view" accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
                     </div>
                     <div class="profile-image">
                         <p> Change profile picture </p> 
-                        <input id="profile-picture" class="mobile-edit-view" accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
+                        <input id="profile-picture" name="picture" class="mobile-edit-view" accept="image/jpeg,image/png,image/webp" tabindex="-1" type="file"  data-testid="fileInput">
                     </div>
                 </div>
                 <div class="info-part"> 
                     <div class="mobile-view-info">
                         <div class="edit-name"> 
                             <p> Name </p>
-                            <input id="user_name" class="mobile-edit-view" type:"text" placeholder="name..."> 
+                            <input id="user_name" name="name" class="mobile-edit-view" type:"text" placeholder="name..."> 
                         </div>
                         <div class="edit-tag"> 
                             <p> Tag </p>
-                            <input id="user_tag" class="mobile-edit-view" type:"text" placeholder="@..."> 
+                            <input id="user_tag" name="tag" class="mobile-edit-view" type:"text" placeholder="@..."> 
                         </div>
                         <div class="edit-bio"> 
                             <p> Bio </p>
-                            <input id="user_bio" class="mobile-edit-view" type:"text" placeholder="Bio"> 
+                            <input id="user_bio" name="bio" class="mobile-edit-view" type:"text" placeholder="Bio"> 
                         </div>
                         <div class="edit-birthday">
                             <p> Edit Birthday </p>
-                            <input id="user_birthday" class="mobile-edit-view" type="date" id="birthday" name="birthday">
+                            <input id="user_birthday" name="birthday" class="mobile-edit-view" type="date" id="birthday" name="birthday">
                         </div> 
                     </div>
                 </div>
                 <div class="save-part">
                     <div class="save"> <button id="save-button" type="Save"> Save </button></div>
                     <div> <a href="./profile-page.html"> <button class="cancel" type="cancel"> Cancel </button> </a> </div>
+                    <div> <p id="save-message"> </p> </div>
                 </div>
             </div>
         </div>
@@ -92,5 +93,6 @@
     </div>
     
     <script src="./js/fetch-api.js"></script>
+    <script src="./js/edit.js"></script>
   </body>
 </html>  
