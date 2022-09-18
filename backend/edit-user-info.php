@@ -6,35 +6,30 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-$id = $_POST["id"];
-$name = $_POST["name"];
-$tag = $_POST["tag"];
-$bio = $_POST["bio"];
-$birthday = $_POST["birthday"];
+// since where working on the first user account
+    $name = $_POST["name"];
+    $tag = $_POST["tag"];
+    $bio = $_POST["bio"];
+    $birthday = $_POST["birthday"];
 
+    //$picture = fetchimage($_POST["picture"]);
+    //$header = fetchimage($_POST["header"]);
 
-$picture = fetchimage($_POST["picture"]);
-$header = fetchimage($_POST["header"]);
+    $query = $mysqli->prepare(
+        "UPDATE users
+        SET 
+            name = $name,
+            tag = $tag,
+            bio = $bio,
+            birthday = $birthday
+        HAVING
+            iduser = 1;"
+    );
 
+    $query->execute();
 
-$query = $mysqli->prepare(
-    "UPDATE users
-    SET 
-        name = $name,
-        tag = $tag,
-        bio = $bio,
-        birthday = $birthday,
-        profilepic = $picture,
-        headerpic = $header 
-    WHERE
-        iduser = $id;"
-);
+    $response = [];
+    $response["success"] = true;
 
-$query->execute();
-
-$response = [];
-$response["success"] = true;
-
-echo json_encode($response);
-
+    echo json_encode($response);
 ?>
