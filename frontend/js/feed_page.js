@@ -29,8 +29,6 @@ const cloneType1Tweet = () => {
     insertAfter(clone, reference)
 }
 
-cloneType1Tweet()
-cloneType1Tweet()
 const cloneType2Tweet = () => {
     const div = document.getElementById("tweet-tupe-2")
     const body = document.getElementById("container-feed")
@@ -39,6 +37,3 @@ const cloneType2Tweet = () => {
     clone.classList.add("media-tweet")
     insertAfter(clone, reference)
 }
-
-cloneType2Tweet()
-cloneType1Tweet()

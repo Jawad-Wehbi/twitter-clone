@@ -30,21 +30,11 @@ $query = $mysqli->prepare(
         iduser = $id;"
 );
 
-$query->bind_param("ss", $name, $bio);
 $query->execute();
 
 $response = [];
 $response["success"] = true;
 
 echo json_encode($response);
-
-
-    
-function fetchimage ()
-{
-    var dataImage = localStorage.getItem('imgData');
-    var bannerImg = document.getElementById('tableBanner');
-     bannerImg.src = "data:image/png;base64," + dataImage;
-}
 
 ?>

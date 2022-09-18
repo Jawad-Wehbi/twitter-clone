@@ -1,5 +1,4 @@
 // to fetch php files
-const adress = "http://localhost/twitter%20clone/backend/"
 
 async function getData() {
     const response = await fetch(

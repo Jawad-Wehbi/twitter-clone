@@ -6,11 +6,6 @@ include_once "connection.php";
 
 
     
-function fetchimage ()
-{
-    var dataImage = localStorage.getItem('imgData');
-    var bannerImg = document.getElementById('tableBanner');
-     bannerImg.src = "data:image/png;base64," + dataImage;
-}
+
 
 ?>
