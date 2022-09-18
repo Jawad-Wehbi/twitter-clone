@@ -132,12 +132,11 @@ width: 560px;
 height: 600px;
 border-radius: 20px;
 padding-inline: 20px;
+padding-bottom: 20px;
 }
 .close {
     font-size: 35px;
     font-weight: 600;
-    top: 3vh;
-    left: 5vw;
     color: #1D9BF0;
   }
 .signUpHeader{
@@ -148,17 +147,37 @@ padding-inline: 20px;
     width: 420px;
     height: 55px;
     border-radius: 10px;
+    font-size: large;
 }
 .phone-input{
     width: 420px;
     height: 55px;
     border-radius: 10px;
+    font-size: large;
 }
 .email-input{
     width: 420px;
     height: 55px;
     border-radius: 10px;
+    font-size: large;
 }
+.password-input{
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: large;
+}
+.Continue{
+    height: 40px;
+    border-radius: 45.5px;
+    width: 100px;
+    background-color: #1D9BF0 ;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.continuebutton
 .dis-none{
     display: none;
 }
