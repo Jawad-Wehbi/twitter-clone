@@ -4,7 +4,7 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 $response = [];
 
-$emailExist = mysqli_query($twitter, "SELECT email FROM users WHERE email = '$email'");
+$emailExist = mysqli_query($mysqli, "SELECT email FROM users WHERE email = '$email'");
 if(!(mysqli_num_rows($emailExist))) {
     $response["success"] = false;
     $response["why"] = "email";
@@ -15,7 +15,7 @@ $password = hash("sha256", $password);
 $password.="Jay11410";
 
 // checking password if exist
-$correctpassword = mysqli_query($twitter, "SELECT password FROM users WHERE email = '$email'")->fetch_object()->password;
+$correctpassword = mysqli_query($mysqli, "SELECT password FROM users WHERE email = '$email'")->fetch_object()->password;
 if($password != $correctpassword) {
     $response["success"] = false;
     $response["why"] = "password";
